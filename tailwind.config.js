@@ -11,6 +11,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        editorial: ["EditorialNew", "sans-serif"],
+      },
       fontSize: {
         "9xl": [
           "8rem",
