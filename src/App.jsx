@@ -9,6 +9,7 @@ function App() {
   const [activeChart, setActiveChart] = useState("popularVote");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
   const [hoveredPartyInfo, setHoveredPartyInfo] = useState(null);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -49,46 +50,62 @@ function App() {
       popularVote: "41%",
       seats: 211,
       chance: "96%",
+      leader: "Leader A",
+      lastSeats: 200,
     },
     {
       color: "#143278",
       partyName: "Bloc Québécois",
-      popularVote: "4%",
+      popularVote: "7%",
       seats: 36,
       chance: "0%",
+      leader: "Leader B",
+      lastSeats: 40,
     },
     {
       color: "#8c4bcc",
       partyName: "People's",
-      popularVote: "2%",
+      popularVote: "3%",
       seats: 0,
       chance: "0%",
+      leader: "Leader C",
+      lastSeats: 1,
     },
     {
       color: "#ff2930",
       partyName: "Liberal",
-      popularVote: "24%",
+      popularVote: "25%",
       seats: 74,
       chance: "4%",
+      leader: "Leader D",
+      lastSeats: 80,
     },
     {
       color: "#ff9d26",
       partyName: "New Democratic",
-      popularVote: "17%",
+      popularVote: "19%",
       seats: 20,
       chance: "0.1%",
+      leader: "Leader E",
+      lastSeats: 25,
     },
     {
       color: "#4fc957",
       partyName: "Green",
-      popularVote: "8%",
+      popularVote: "5%",
       seats: 2,
       chance: "0%",
+      leader: "Leader F",
+      lastSeats: 3,
     },
   ];
 
+  const handleMouseMove = (event) => {
+    setCursorPosition({ x: event.clientX, y: event.clientY });
+  };
+
   return (
-    <div className="font-sans p-8 relative">
+    <div className="font-sans p-8 relative" onMouseMove={handleMouseMove}>
       <div className="mb-8">
         <h1 className="text-7xl text-center font-editorial text-gray-800">
           2025 Federal Forecast
@@ -139,8 +156,15 @@ function App() {
                 <div
                   key={index}
                   className="flex items-center space-x-4 bg-white bg-opacity-0 p-2 rounded pointer-events-auto relative"
-                  onMouseEnter={() => setHoveredPartyInfo(info)}
-                  onMouseLeave={() => setHoveredPartyInfo(null)}
+                  onMouseEnter={() => {
+                    setHoveredPartyInfo(info);
+                    console.log(info);
+                    console.log("Entered");
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredPartyInfo(null);
+                    console.log("Left");
+                  }}
                 >
                   <div
                     className="w-7 h-7 rounded-full"
@@ -169,10 +193,19 @@ function App() {
                     </div>
                   </div>
                   {hoveredPartyInfo === info && (
-                    <div className="absolute left-10 top-10 bg-white p-2 rounded shadow-lg z-10">
+                    <div
+                      className="absolute bg-white p-4 rounded shadow-lg z-10"
+                      style={{
+                        top: cursorPosition.y,
+                        left: cursorPosition.x,
+                        transform: "translate(-50%, -50%)",
+                      }}
+                    >
                       <p className="text-gray-800 font-mono">
-                        {info.partyName}: {getValue(activeChart, info)}{" "}
-                        {getDescription(activeChart)}
+                        Leader: {info.leader}
+                      </p>
+                      <p className="text-gray-800 font-mono">
+                        Last Seats: {info.lastSeats}
                       </p>
                     </div>
                   )}
@@ -184,8 +217,15 @@ function App() {
                 <div
                   key={index}
                   className="flex items-center space-x-4 bg-white bg-opacity-0 p-2 rounded pointer-events-auto relative"
-                  onMouseEnter={() => setHoveredPartyInfo(info)}
-                  onMouseLeave={() => setHoveredPartyInfo(null)}
+                  onMouseEnter={() => {
+                    setHoveredPartyInfo(info);
+                    console.log(info);
+                    console.log("Entered");
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredPartyInfo(null);
+                    console.log("Left");
+                  }}
                 >
                   <div className="text-left">
                     <p className="text-4xl text-gray-800 font-editorial text-right">
@@ -214,10 +254,19 @@ function App() {
                     }}
                   ></div>
                   {hoveredPartyInfo === info && (
-                    <div className="absolute left-10 top-10 bg-white p-2 rounded shadow-lg z-10">
+                    <div
+                      className="absolute bg-white p-4 rounded shadow-lg z-10"
+                      style={{
+                        top: cursorPosition.y,
+                        left: cursorPosition.x,
+                        transform: "translate(-50%, -50%)",
+                      }}
+                    >
                       <p className="text-gray-800 font-mono">
-                        {info.partyName}: {getValue(activeChart, info)}{" "}
-                        {getDescription(activeChart)}
+                        Leader: {info.leader}
+                      </p>
+                      <p className="text-gray-800 font-mono">
+                        Last Seats: {info.lastSeats}
                       </p>
                     </div>
                   )}
