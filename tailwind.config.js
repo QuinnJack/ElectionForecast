@@ -13,6 +13,9 @@ export default {
     extend: {
       fontFamily: {
         editorial: ["EditorialNew", "sans-serif"],
+        "editorial-light": ["EditorialNewLight", "sans-serif"],
+        "roboto-mono": ['"Roboto Mono"', "monospace"],
+        degular: ["Degular", "sans-serif"],
       },
       fontSize: {
         "9xl": [

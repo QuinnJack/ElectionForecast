@@ -12,3 +12,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Degular";
+  src: url("/degular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EditorialNewLight";
+  src: url("/EditorialNewLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
