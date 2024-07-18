@@ -51,7 +51,6 @@ const electionData = {
     { label: "CPC", seats: 121, votes: 34.3, color: "rgba(23,165,255,0.7)" },
   ],
   2015: [
-    { label: "PP", seats: 0, votes: 0.0, color: "rgba(140,75,204,0.7)" },
     { label: "GPC", seats: 1, votes: 3.4, color: "rgba(79,201,87,0.7)" },
     { label: "BQ", seats: 10, votes: 4.7, color: "rgba(21,50,120,0.7)" },
     { label: "NDP", seats: 44, votes: 19.7, color: "rgba(255,157,38,0.7)" },
@@ -59,7 +58,6 @@ const electionData = {
     { label: "CPC", seats: 99, votes: 31.9, color: "rgba(23,165,255,0.7)" },
   ],
   2011: [
-    { label: "PP", seats: 0, votes: 0.0, color: "rgba(140,75,204,0.7)" },
     { label: "GPC", seats: 1, votes: 3.9, color: "rgba(79,201,87,0.7)" },
     { label: "BQ", seats: 4, votes: 6.0, color: "rgba(21,50,120,0.7)" },
     { label: "NDP", seats: 103, votes: 30.6, color: "rgba(255,157,38,0.7)" },
@@ -67,7 +65,6 @@ const electionData = {
     { label: "CPC", seats: 166, votes: 39.6, color: "rgba(23,165,255,0.7)" },
   ],
   2008: [
-    { label: "PP", seats: 0, votes: 0.0, color: "rgba(140,75,204,0.7)" },
     { label: "GPC", seats: 0, votes: 6.8, color: "rgba(79,201,87,0.7)" },
     { label: "BQ", seats: 49, votes: 10.0, color: "rgba(21,50,120,0.7)" },
     { label: "NDP", seats: 37, votes: 18.2, color: "rgba(255,157,38,0.7)" },
@@ -75,7 +72,6 @@ const electionData = {
     { label: "CPC", seats: 143, votes: 37.6, color: "rgba(23,165,255,0.7)" },
   ],
   2006: [
-    { label: "PP", seats: 0, votes: 0.0, color: "rgba(140,75,204,0.7)" },
     { label: "GPC", seats: 0, votes: 4.5, color: "rgba(79,201,87,0.7)" },
     { label: "BQ", seats: 51, votes: 10.5, color: "rgba(21,50,120,0.7)" },
     { label: "NDP", seats: 29, votes: 17.5, color: "rgba(255,157,38,0.7)" },
@@ -83,7 +79,6 @@ const electionData = {
     { label: "CPC", seats: 124, votes: 36.3, color: "rgba(23,165,255,0.7)" },
   ],
   2004: [
-    { label: "PP", seats: 0, votes: 0.0, color: "rgba(140,75,204,0.7)" },
     { label: "GPC", seats: 0, votes: 4.3, color: "rgba(79,201,87,0.7)" },
     { label: "BQ", seats: 54, votes: 12.4, color: "rgba(21,50,120,0.7)" },
     { label: "NDP", seats: 19, votes: 15.7, color: "rgba(255,157,38,0.7)" },
