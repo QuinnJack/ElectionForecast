@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import React, { useState } from "react";
 import Pie, { ProvidedProps, PieArcDatum } from "@visx/shape/lib/shapes/Pie";
 import { Group } from "@visx/group";
-import { GradientPinkBlue } from "@visx/gradient";
 import { animated, useTransition, interpolate } from "@react-spring/web";
 
 interface PartyInfo {
@@ -11,13 +9,17 @@ interface PartyInfo {
   votes: number;
   color: string;
 }
+const numOfSeats = 343;
 const parties: PartyInfo[] = [
-  { label: "CPC", seats: 121, votes: 34.34, color: "rgba(23,165,255,0.7)" },
-  { label: "LPC", seats: 157, votes: 33.12, color: "rgba(255,41,48,0.7)" },
-  { label: "NDP", seats: 24, votes: 15.98, color: "rgba(255,157,38,0.7)" },
+  { label: "PP", seats: 0, votes: 4.94, color: "rgba(140,75,204,0.7)" },
+
+  { label: "GPC", seats: 3, votes: 2.33, color: "rgba(79,201,87,0.7)" },
+
   { label: "BQ", seats: 32, votes: 7.63, color: "rgba(21,50,120,0.7)" },
-  { label: "Green", seats: 3, votes: 6.55, color: "rgba(79,201,87,0.7)" },
-  { label: "PP", seats: 0, votes: 1.62, color: "rgba(140,75,204,0.7)" },
+  { label: "NDP", seats: 24, votes: 15.98, color: "rgba(255,157,38,0.7)" },
+
+  { label: "LPC", seats: 157, votes: 33.12, color: "rgba(255,41,48,0.7)" },
+  { label: "CPC", seats: 121, votes: 34.34, color: "rgba(23,165,255,0.7)" },
 ];
 
 // accessor functions
@@ -84,13 +86,26 @@ export default function Example({
               getLabel={(arc) => `${arc.data.votes}%`}
               isOuter={true}
               borderOpacity={borderOpacity}
+              radius={radius}
+              donutThickness={donutThickness}
+              selectedParty={selectedParty}
             />
           )}
         </Pie>
         <Pie
           data={
             selectedParty
-              ? parties.filter(({ label }) => label === selectedParty)
+              ? parties.filter(({ label }) => label === selectedParty).length >
+                0
+                ? parties.filter(({ label }) => label === selectedParty)
+                : [
+                    {
+                      label: "PP",
+                      seats: 1,
+                      votes: 4.94,
+                      color: "rgba(140,75,204,0.7)",
+                    },
+                  ]
               : parties
           }
           pieValue={seats}
@@ -113,23 +128,13 @@ export default function Example({
               getLabel={(arc) => `${arc.data.seats} seats`}
               isOuter={false}
               borderOpacity={borderOpacity}
+              radius={radius - donutThickness * 1.3}
+              donutThickness={donutThickness}
+              selectedParty={selectedParty}
             />
           )}
         </Pie>
       </Group>
-      {animate && (
-        <text
-          textAnchor="end"
-          x={width - 16}
-          y={height - 16}
-          fill="white"
-          fontSize={11}
-          fontWeight={300}
-          pointerEvents="none"
-        >
-          Click segments to update
-        </text>
-      )}
     </svg>
   );
 }
@@ -158,7 +163,11 @@ type AnimatedPieProps<Datum> = ProvidedProps<Datum> & {
   isOuter: boolean;
   delay?: number;
   borderOpacity?: number;
+  radius: number;
+  donutThickness: number;
+  selectedParty: string | null;
 };
+// Updated AnimatedPie component
 
 function AnimatedPie<Datum>({
   animate,
@@ -170,6 +179,9 @@ function AnimatedPie<Datum>({
   onClickDatum,
   isOuter,
   borderOpacity = 1,
+  radius,
+  donutThickness,
+  selectedParty,
 }: AnimatedPieProps<Datum>) {
   const transitions = useTransition<PieArcDatum<Datum>, AnimatedStyles>(arcs, {
     from: animate ? fromLeaveTransition : enterUpdateTransition,
@@ -178,14 +190,29 @@ function AnimatedPie<Datum>({
     leave: animate ? fromLeaveTransition : enterUpdateTransition,
     keys: getKey,
   });
+
+  // Calculate expected seats based on votes
+  const calculateExpectedSeats = (votes: number) =>
+    Math.floor((votes / 100) * numOfSeats);
+
   return transitions((props, arc, { key }) => {
     const [centroidX, centroidY] = path.centroid(arc);
     const hasSpaceForLabel = arc.endAngle - arc.startAngle >= 0.1;
 
+    const data = arc.data as PartyInfo;
+
+    const isSelected = selectedParty === data.label;
+    const expandedRadius = isSelected ? radius : radius - donutThickness;
+    const innerRadius = isSelected ? 0 : radius - donutThickness;
+
+    const expectedSeats = calculateExpectedSeats(data.votes);
+
+    // Determine text color for selected state
+    const selectedTextColor = data.label === "PP" ? "#68438c" : "white";
+
     return (
       <g key={key}>
         <animated.path
-          // compute interpolated path d attribute from intermediate angle values
           d={interpolate(
             [props.startAngle, props.endAngle],
             (startAngle, endAngle) =>
@@ -193,6 +220,8 @@ function AnimatedPie<Datum>({
                 ...arc,
                 startAngle,
                 endAngle,
+                outerRadius: expandedRadius,
+                innerRadius,
               })
           )}
           fill={getColor(arc)}
@@ -209,9 +238,9 @@ function AnimatedPie<Datum>({
                 fill="white"
                 x={centroidX}
                 y={centroidY}
-                dy="-0.5em"
-                fontSize={9}
+                fontSize={15}
                 fontWeight="bold"
+                font-family="EditorialNewLight"
                 textAnchor="middle"
                 pointerEvents="none"
               >
@@ -221,13 +250,48 @@ function AnimatedPie<Datum>({
             <text
               fill="white"
               x={centroidX}
+              font-family="degular"
               y={centroidY}
-              dy={isOuter ? "0.5em" : "0.0em"}
-              fontSize={9}
+              dy={isOuter ? "1.1em" : "0.0em"}
+              fontSize={isOuter ? 13 : 16}
               textAnchor="middle"
               pointerEvents="none"
             >
               {getLabel(arc)}
+            </text>
+          </animated.g>
+        )}
+        {isSelected && (
+          <animated.g style={{ opacity: props.opacity }}>
+            <text
+              fill={selectedTextColor}
+              x={0}
+              y={0}
+              fontSize={18}
+              fontWeight="bold"
+              textAnchor="middle"
+            ></text>
+            <text
+              fill={selectedTextColor}
+              x={0}
+              y={20}
+              fontSize={18}
+              textAnchor="middle"
+              font-family="degular"
+            >
+              {`The ${data.label} ${
+                data.seats >= expectedSeats ? "overperformed" : "underperformed"
+              } by winning ${data.seats} seats with ${data.votes}% of votes.`}
+            </text>
+            <text
+              fill={selectedTextColor}
+              x={0}
+              y={40}
+              fontSize={18}
+              textAnchor="middle"
+              font-family="degular"
+            >
+              {`Statistically, you would expect the ${data.label} to win ${expectedSeats} seats.`}
             </text>
           </animated.g>
         )}
