@@ -15,9 +15,7 @@ function Methodology() {
             Methodology
           </h1>
           <br />
-          <Pie />
           <Example width={700} height={700} />
-          <AnimatedPie />
 
           <p className="text-left font-light text-gray-600 mb-8">
             This section provides a detailed explanation of the methods and

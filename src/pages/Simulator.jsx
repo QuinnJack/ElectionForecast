@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 import Header from "../components/ui/Header";
 import Simulator from "../components/ui/Simulator";
 import "../App.css";
+import IconTabs from "../components/ui/IconTabs";
+import Example from "../components/ui/Pie";
 
 function Forecast() {
   const [activeChart, setActiveChart] = useState("popularVote");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
   const [hoveredPartyInfo, setHoveredPartyInfo] = useState(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [selectedTab, setSelectedTab] = useState("2021");
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -104,7 +107,6 @@ function Forecast() {
 
   return (
     <div>
-      {" "}
       <Header />
       <div className="font-sans p-8 relative" onMouseMove={handleMouseMove}>
         <div className="mb-8">
@@ -117,6 +119,14 @@ function Forecast() {
             election.
           </p>
           <Simulator />
+        </div>
+        <IconTabs
+          center={true}
+          selectedTab={selectedTab}
+          setSelectedTab={setSelectedTab}
+        />
+        <div className="flex justify-center">
+          <Example width={700} height={700} year={selectedTab} />
         </div>
       </div>
     </div>

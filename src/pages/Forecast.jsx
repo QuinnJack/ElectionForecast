@@ -6,6 +6,7 @@ import Loading from "../components/ui/Loading";
 import Counter from "../components/ui/Counter"; // Ensure the correct path
 import CanadaMap from "react-canada-map";
 import Header from "../components/ui/Header";
+import Example from "../components/ui/Pie";
 
 function Forecast() {
   const [activeChart, setActiveChart] = useState("popularVote");
