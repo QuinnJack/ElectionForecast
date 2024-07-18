@@ -116,7 +116,7 @@ function Forecast() {
             Federal Forecast
           </h1>
           <br />
-          <p className="text-center font-roboto-mono text-gray-600">
+          <p className="text-center text-2xl font-degular font-light text-gray-500">
             A statistical overview of the upcoming Canadian 2025 federal
             election.
           </p>
@@ -128,6 +128,7 @@ function Forecast() {
               onTabChange={(value) => setActiveChart(value)}
             />
           </div>
+
           <div className="relative h-[800px]">
             {!isScriptLoaded ? (
               <Loading />
@@ -184,7 +185,7 @@ function Forecast() {
                         {info.partyName}
                       </p>
                       <div className="flex items-center justify-start space-x-2">
-                        <p className="text-sm font-roboto-mono text-gray-600">
+                        <p className="text-sm font-mono text-gray-600">
                           {getDescription(activeChart)}
                         </p>
                         <div className="text-6xl font-editorial text-gray-800">
@@ -207,10 +208,10 @@ function Forecast() {
                           transform: "translate(-50%, -50%)",
                         }}
                       >
-                        <p className="text-gray-800 font-roboto-mono">
+                        <p className="text-gray-800 font-mono">
                           Leader: {info.leader}
                         </p>
-                        <p className="text-gray-800 font-roboto-mono">
+                        <p className="text-gray-800 font-mono">
                           Last Seats: {info.lastSeats}
                         </p>
                       </div>
@@ -247,7 +248,7 @@ function Forecast() {
                             }
                           />{" "}
                         </div>
-                        <p className="text-sm font-roboto-mono text-gray-600">
+                        <p className="text-sm font-mono text-gray-600">
                           {getDescription(activeChart)}
                         </p>
                       </div>
@@ -268,10 +269,10 @@ function Forecast() {
                           transform: "translate(-50%, -50%)",
                         }}
                       >
-                        <p className="text-gray-800 font-roboto-mono">
+                        <p className="text-gray-800 font-mono">
                           Leader: {info.leader}
                         </p>
-                        <p className="text-gray-800 font-roboto-mono">
+                        <p className="text-gray-800 font-mono">
                           Last Seats: {info.lastSeats}
                         </p>
                       </div>
@@ -286,8 +287,8 @@ function Forecast() {
         <div className="mb-8">
           <div className="border-t border-gray-300 my-4 mx-32"></div>
           <br />
-          <h2 className="text-6xl text-center font-editorial-light text-gray-800">
-            Historical Trends
+          <h2 className="text-5xl  text-center font-editorial-light text-gray-800">
+            Race Over Time
           </h2>
           <br />
           <div className="flex justify-center mb-4">
@@ -333,8 +334,8 @@ function Forecast() {
         <div className="mb-8">
           <div className="border-t border-gray-300 my-4 mx-32"></div>
           <br />
-          <h2 className="text-6xl text-center font-editorial-light text-gray-800">
-            Path to 343
+          <h2 className="text-5xl font-semibold text-center font-editorial text-gray-800">
+            Province Correlation
           </h2>
           <br />
         </div>
@@ -342,7 +343,7 @@ function Forecast() {
         <div className="mb-8">
           <div className="border-t border-gray-300 my-4 mx-32"></div>
           <br />
-          <h2 className="text-6xl text-center font-editorial-light text-gray-800">
+          <h2 className="text-5xl font-semibold text-center font-editorial text-gray-800">
             Path to 343
           </h2>
           <br />

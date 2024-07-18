@@ -1,8 +1,12 @@
 import animate from "tailwindcss-animate";
+const { nextui } = require("@nextui-org/react");
 
 export default {
   darkMode: ["class"],
-  content: ["src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -14,8 +18,7 @@ export default {
       fontFamily: {
         editorial: ["EditorialNew", "sans-serif"],
         "editorial-light": ["EditorialNewLight", "sans-serif"],
-        "roboto-mono": ['"Roboto Mono"', "monospace"],
-        degular: ["Degular", "sans-serif"],
+        degular: ['"degular"', "ui-sans-serif"],
       },
       fontSize: {
         "9xl": [
@@ -210,5 +213,5 @@ export default {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate, nextui()],
 };

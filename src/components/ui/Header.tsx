@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const Header = () => {
+  const navItems = [
+    { to: "/forecast", text: "FORECAST" },
+    { to: "/simulator", text: "SIMULATOR" },
+    { to: "/methodology", text: "METHODOLOGY" },
+  ];
+
   return (
     <header className="bg-white">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-24">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <span className="relative group inline-block overflow-hidden">
@@ -20,39 +27,25 @@ const Header = () => {
                 />
               </span>
             </div>
-            <nav className="ml-10">
-              <ul className="flex space-x-4">
-                <li>
-                  <Link
-                    to="/forecast"
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200"
-                  >
-                    FORECAST
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/methodology"
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200"
-                  >
-                    METHODOLOGY
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/simulator"
-                    className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200"
-                  >
-                    SIMULATOR
-                  </Link>
-                </li>
+            <nav className="ml-6">
+              <ul className="flex space-x-2">
+                {navItems.map((item) => (
+                  <li key={item.to}>
+                    <Link
+                      to={item.to}
+                      className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200 block"
+                    >
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
           <div>
             <Link
               to="/about"
-              className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200"
+              className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium uppercase font-mono transition-colors duration-200 block"
             >
               ABOUT
             </Link>
