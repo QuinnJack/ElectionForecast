@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import Header from "../components/ui/Header";
 import PathTo343 from "../components/ui/PathTo343";
+import Pie from "../components/ui/Pie";
+import Example from "../components/ui/Pie";
+import AnimatedPie from "../components/ui/Pie";
+
 function Methodology() {
   return (
     <div>
@@ -11,6 +15,10 @@ function Methodology() {
             Methodology
           </h1>
           <br />
+          <Pie />
+          <Example width={500} height={500} />
+          <AnimatedPie />
+
           <p className="text-left font-light text-gray-600 mb-8">
             This section provides a detailed explanation of the methods and
             approaches used in forecasting the upcoming Canadian 2025 federal

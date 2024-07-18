@@ -12,6 +12,7 @@ import browserUsage, {
 } from "@visx/mock-data/lib/mocks/browserUsage";
 import { animated, useTransition, interpolate } from "@react-spring/web";
 
+import partiesInfo, { PartiesInfo as Browsers1 } from "./assets/partiesInfo";
 // data and types
 type BrowserNames = keyof Browsers;
 
@@ -37,22 +38,23 @@ const frequency = (d: LetterFrequency) => d.frequency;
 const getBrowserColor = scaleOrdinal({
   domain: browserNames,
   range: [
-    "rgba(255,255,255,0.7)",
-    "rgba(255,255,255,0.6)",
-    "rgba(255,255,255,0.5)",
-    "rgba(255,255,255,0.4)",
-    "rgba(255,255,255,0.3)",
-    "rgba(255,255,255,0.2)",
-    "rgba(255,255,255,0.1)",
+    "rgba(23,165,255,0.8)",
+    "rgba(255,41,48,0.8)",
+    "rgba(255,157,38,0.8)",
+    "rgba(79,201,87,0.8)",
+    "rgba(21,50,120,0.8)",
+    "rgba(140,75,204,0.8)",
   ],
 });
 const getLetterFrequencyColor = scaleOrdinal({
   domain: letters.map((l) => l.letter),
   range: [
-    "rgba(93,30,91,1)",
-    "rgba(93,30,91,0.8)",
-    "rgba(93,30,91,0.6)",
-    "rgba(93,30,91,0.4)",
+    "rgba(23,165,255,0.8)",
+    "rgba(255,41,48,0.8)",
+    "rgba(255,157,38,0.8)",
+    "rgba(79,201,87,0.8)",
+    "rgba(21,50,120,0.8)",
+    "rgba(140,75,204,0.8)",
   ],
 });
 
@@ -87,13 +89,7 @@ export default function Example({
 
   return (
     <svg width={width} height={height}>
-      <GradientPinkBlue id="visx-pie-gradient" />
-      <rect
-        rx={14}
-        width={width}
-        height={height}
-        fill="url('#visx-pie-gradient')"
-      />
+      <rect rx={14} width={width} height={height} fill="#ffffff" />
       <Group top={centerY + margin.top} left={centerX + margin.left}>
         <Pie
           data={
@@ -112,12 +108,18 @@ export default function Example({
               {...pie}
               animate={animate}
               getKey={(arc) => arc.data.label}
-              onClickDatum={({ data: { label } }) =>
-                animate &&
-                setSelectedBrowser(
-                  selectedBrowser && selectedBrowser === label ? null : label
-                )
-              }
+              onClickDatum={({ data: { label } }) => {
+                if (animate) {
+                  setSelectedBrowser(
+                    selectedBrowser && selectedBrowser === label ? null : label
+                  );
+                  setSelectedAlphabetLetter(
+                    selectedAlphabetLetter && selectedAlphabetLetter === label
+                      ? null
+                      : label
+                  );
+                }
+              }}
               getColor={(arc) => getBrowserColor(arc.data.label)}
             />
           )}
@@ -139,14 +141,20 @@ export default function Example({
               {...pie}
               animate={animate}
               getKey={({ data: { letter } }) => letter}
-              onClickDatum={({ data: { letter } }) =>
-                animate &&
-                setSelectedAlphabetLetter(
-                  selectedAlphabetLetter && selectedAlphabetLetter === letter
-                    ? null
-                    : letter
-                )
-              }
+              onClickDatum={({ data: { letter } }) => {
+                if (animate) {
+                  setSelectedAlphabetLetter(
+                    selectedAlphabetLetter && selectedAlphabetLetter === letter
+                      ? null
+                      : letter
+                  );
+                  setSelectedBrowser(
+                    selectedBrowser && selectedBrowser === letter
+                      ? null
+                      : letter
+                  );
+                }
+              }}
               getColor={({ data: { letter } }) =>
                 getLetterFrequencyColor(letter)
               }

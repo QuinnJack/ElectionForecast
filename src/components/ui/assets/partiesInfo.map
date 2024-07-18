@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "partiesInfo.d.ts",
+  "sourceRoot": "",
+  "sources": [
+    "../../components/ui/assets/partiesInfo.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,WAAW,YAAY;IAC3B,IAAI,EAAE,MAAM,CAAC;IACb,eAAe,EAAE,MAAM,CAAC;IACxB,mBAAmB,EAAE,MAAM,CAAC;IAC5B,OAAO,EAAE,MAAM,CAAC;IAChB,MAAM,EAAE,MAAM,CAAC;IACf,gBAAgB,EAAE,MAAM,CAAC;IACzB,KAAK,EAAE,MAAM,CAAC;IACd,OAAO,EAAE,MAAM,CAAC;IAChB,eAAe,EAAE,MAAM,CAAC;CACzB;AAED,QAAA,MAAM,YAAY,EAAE,YAAY,EAs8H/B,CAAC;AAEF,eAAe,YAAY,CAAC"
+}
