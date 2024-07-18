@@ -1,62 +1,28 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import React, { useState } from "react";
 import Pie, { ProvidedProps, PieArcDatum } from "@visx/shape/lib/shapes/Pie";
-import { scaleOrdinal } from "@visx/scale";
 import { Group } from "@visx/group";
 import { GradientPinkBlue } from "@visx/gradient";
-import letterFrequency, {
-  LetterFrequency,
-} from "@visx/mock-data/lib/mocks/letterFrequency";
-import browserUsage, {
-  BrowserUsage as Browsers,
-} from "@visx/mock-data/lib/mocks/browserUsage";
 import { animated, useTransition, interpolate } from "@react-spring/web";
 
-import partiesInfo, { PartiesInfo as Browsers1 } from "./assets/partiesInfo";
-// data and types
-type BrowserNames = keyof Browsers;
-
-interface BrowserUsage {
-  label: BrowserNames;
-  usage: number;
+interface PartyInfo {
+  label: string;
+  seats: number;
+  votes: number;
+  color: string;
 }
-
-const letters: LetterFrequency[] = letterFrequency.slice(0, 4);
-const browserNames = Object.keys(browserUsage[0]).filter(
-  (k) => k !== "date"
-) as BrowserNames[];
-const browsers: BrowserUsage[] = browserNames.map((name) => ({
-  label: name,
-  usage: Number(browserUsage[0][name]),
-}));
+const parties: PartyInfo[] = [
+  { label: "CPC", seats: 121, votes: 34.34, color: "rgba(23,165,255,0.7)" },
+  { label: "LPC", seats: 157, votes: 33.12, color: "rgba(255,41,48,0.7)" },
+  { label: "NDP", seats: 24, votes: 15.98, color: "rgba(255,157,38,0.7)" },
+  { label: "BQ", seats: 32, votes: 7.63, color: "rgba(21,50,120,0.7)" },
+  { label: "Green", seats: 3, votes: 6.55, color: "rgba(79,201,87,0.7)" },
+  { label: "PP", seats: 0, votes: 1.62, color: "rgba(140,75,204,0.7)" },
+];
 
 // accessor functions
-const usage = (d: BrowserUsage) => d.usage;
-const frequency = (d: LetterFrequency) => d.frequency;
-
-// color scales
-const getBrowserColor = scaleOrdinal({
-  domain: browserNames,
-  range: [
-    "rgba(23,165,255,0.8)",
-    "rgba(255,41,48,0.8)",
-    "rgba(255,157,38,0.8)",
-    "rgba(79,201,87,0.8)",
-    "rgba(21,50,120,0.8)",
-    "rgba(140,75,204,0.8)",
-  ],
-});
-const getLetterFrequencyColor = scaleOrdinal({
-  domain: letters.map((l) => l.letter),
-  range: [
-    "rgba(23,165,255,0.8)",
-    "rgba(255,41,48,0.8)",
-    "rgba(255,157,38,0.8)",
-    "rgba(79,201,87,0.8)",
-    "rgba(21,50,120,0.8)",
-    "rgba(140,75,204,0.8)",
-  ],
-});
+const seats = (d: PartyInfo) => d.seats;
+const votes = (d: PartyInfo) => d.votes;
 
 const defaultMargin = { top: 20, right: 20, bottom: 20, left: 20 };
 
@@ -65,6 +31,7 @@ export type PieProps = {
   height: number;
   margin?: typeof defaultMargin;
   animate?: boolean;
+  borderOpacity?: number;
 };
 
 export default function Example({
@@ -72,11 +39,9 @@ export default function Example({
   height,
   margin = defaultMargin,
   animate = true,
+  borderOpacity = 0.9,
 }: PieProps) {
-  const [selectedBrowser, setSelectedBrowser] = useState<string | null>(null);
-  const [selectedAlphabetLetter, setSelectedAlphabetLetter] = useState<
-    string | null
-  >(null);
+  const [selectedParty, setSelectedParty] = useState<string | null>(null);
 
   if (width < 10) return null;
 
@@ -93,71 +58,61 @@ export default function Example({
       <Group top={centerY + margin.top} left={centerX + margin.left}>
         <Pie
           data={
-            selectedBrowser
-              ? browsers.filter(({ label }) => label === selectedBrowser)
-              : browsers
+            selectedParty
+              ? parties.filter(({ label }) => label === selectedParty)
+              : parties
           }
-          pieValue={usage}
+          pieValue={votes}
           outerRadius={radius}
           innerRadius={radius - donutThickness}
           cornerRadius={3}
           padAngle={0.005}
         >
           {(pie) => (
-            <AnimatedPie<BrowserUsage>
+            <AnimatedPie<PartyInfo>
               {...pie}
               animate={animate}
               getKey={(arc) => arc.data.label}
               onClickDatum={({ data: { label } }) => {
                 if (animate) {
-                  setSelectedBrowser(
-                    selectedBrowser && selectedBrowser === label ? null : label
-                  );
-                  setSelectedAlphabetLetter(
-                    selectedAlphabetLetter && selectedAlphabetLetter === label
-                      ? null
-                      : label
+                  setSelectedParty(
+                    selectedParty && selectedParty === label ? null : label
                   );
                 }
               }}
-              getColor={(arc) => getBrowserColor(arc.data.label)}
+              getColor={(arc) => arc.data.color}
+              getLabel={(arc) => `${arc.data.votes}%`}
+              isOuter={true}
+              borderOpacity={borderOpacity}
             />
           )}
         </Pie>
         <Pie
           data={
-            selectedAlphabetLetter
-              ? letters.filter(
-                  ({ letter }) => letter === selectedAlphabetLetter
-                )
-              : letters
+            selectedParty
+              ? parties.filter(({ label }) => label === selectedParty)
+              : parties
           }
-          pieValue={frequency}
+          pieValue={seats}
           pieSortValues={() => -1}
           outerRadius={radius - donutThickness * 1.3}
         >
           {(pie) => (
-            <AnimatedPie<LetterFrequency>
+            <AnimatedPie<PartyInfo>
               {...pie}
               animate={animate}
-              getKey={({ data: { letter } }) => letter}
-              onClickDatum={({ data: { letter } }) => {
+              getKey={({ data: { label } }) => label}
+              onClickDatum={({ data: { label } }) => {
                 if (animate) {
-                  setSelectedAlphabetLetter(
-                    selectedAlphabetLetter && selectedAlphabetLetter === letter
-                      ? null
-                      : letter
-                  );
-                  setSelectedBrowser(
-                    selectedBrowser && selectedBrowser === letter
-                      ? null
-                      : letter
+                  setSelectedParty(
+                    selectedParty && selectedParty === label ? null : label
                   );
                 }
               }}
-              getColor={({ data: { letter } }) =>
-                getLetterFrequencyColor(letter)
-              }
+              getColor={(arc) => arc.data.color}
+              getLabel={(arc) => `${arc.data.seats} seats`}
+              isOuter={false}
+              borderOpacity={borderOpacity}
             />
           )}
         </Pie>
@@ -198,8 +153,11 @@ type AnimatedPieProps<Datum> = ProvidedProps<Datum> & {
   animate?: boolean;
   getKey: (d: PieArcDatum<Datum>) => string;
   getColor: (d: PieArcDatum<Datum>) => string;
+  getLabel: (d: PieArcDatum<Datum>) => string;
   onClickDatum: (d: PieArcDatum<Datum>) => void;
+  isOuter: boolean;
   delay?: number;
+  borderOpacity?: number;
 };
 
 function AnimatedPie<Datum>({
@@ -208,7 +166,10 @@ function AnimatedPie<Datum>({
   path,
   getKey,
   getColor,
+  getLabel,
   onClickDatum,
+  isOuter,
+  borderOpacity = 1,
 }: AnimatedPieProps<Datum>) {
   const transitions = useTransition<PieArcDatum<Datum>, AnimatedStyles>(arcs, {
     from: animate ? fromLeaveTransition : enterUpdateTransition,
@@ -237,19 +198,36 @@ function AnimatedPie<Datum>({
           fill={getColor(arc)}
           onClick={() => onClickDatum(arc)}
           onTouchStart={() => onClickDatum(arc)}
+          stroke={getColor(arc)}
+          strokeWidth={1.5}
+          strokeOpacity={borderOpacity}
         />
         {hasSpaceForLabel && (
           <animated.g style={{ opacity: props.opacity }}>
+            {isOuter && (
+              <text
+                fill="white"
+                x={centroidX}
+                y={centroidY}
+                dy="-0.5em"
+                fontSize={9}
+                fontWeight="bold"
+                textAnchor="middle"
+                pointerEvents="none"
+              >
+                {getKey(arc)}
+              </text>
+            )}
             <text
               fill="white"
               x={centroidX}
               y={centroidY}
-              dy=".33em"
+              dy={isOuter ? "0.5em" : "0.0em"}
               fontSize={9}
               textAnchor="middle"
               pointerEvents="none"
             >
-              {getKey(arc)}
+              {getLabel(arc)}
             </text>
           </animated.g>
         )}
