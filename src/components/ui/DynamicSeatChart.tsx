@@ -3,32 +3,44 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "./chart";
 import { RadialBarChart, PolarRadiusAxis, RadialBar } from "recharts";
 import { Label } from "./label";
 
+// Function to darken an HSL color
+const darkenHSL = (hsl, amount) => {
+  console.log(hsl);
+  const [h, s, l] = hsl.match(/\d+/g).map(Number);
+
+  return `hsl(${h}, ${s}%, ${Math.max(0, l - amount)}%)`;
+};
 const DynamicSeatChart = ({ seats }) => {
   const chartConfig = {
     CON: {
       label: "CPC",
       color: "hsl(var(--chart-2))",
+      darkendColor: "hsl(206.3, 100%, 57.431%)",
     },
     LIB: {
       label: "LPC",
       color: "hsl(var(--chart-1))",
+      darkendColor: "hsl(359.92, 100%, 58.346%)",
     },
-
     NPD: {
       label: "NDP",
       color: "hsl(var(--chart-3))",
+      darkendColor: "hsl(30.922, 100%, 57.710%)",
     },
     BQ: {
       label: "BQ",
       color: "hsl(var(--chart-4))",
+      darkendColor: "hsl(223.06, 27.116%, 39.690%)",
     },
     GRN: {
       label: "GPC",
       color: "hsl(var(--chart-5))",
+      darkendColor: "hsl(121.15, 50.986%, 55.701%)",
     },
     PPC: {
       label: "PPC",
       color: "hsl(var(--chart-6))",
+      darkendColor: "hsl(270.4, 56.126%, 54.710%)",
     },
   };
 
@@ -50,7 +62,7 @@ const DynamicSeatChart = ({ seats }) => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex  items-center ">
+      <div className="flex items-center">
         <ChartContainer
           config={chartConfig}
           className="aspect-square w-full max-w-[4000px]"
@@ -91,6 +103,7 @@ const DynamicSeatChart = ({ seats }) => {
                 }}
               />
             </PolarRadiusAxis>
+
             {Object.entries(chartConfig).map(([key, config]) => (
               <RadialBar
                 key={key}
@@ -98,7 +111,9 @@ const DynamicSeatChart = ({ seats }) => {
                 stackId="a"
                 cornerRadius={5}
                 fill={config.color}
-                className="stroke-transparent stroke-2"
+                stroke={config.darkendColor}
+                strokeWidth={1}
+                className="stroke-transparent stroke-1"
               />
             ))}
           </RadialBarChart>
