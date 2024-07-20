@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { NextUIProvider } from "@nextui-org/system";
 import { Slider } from "@nextui-org/react";
 import DynamicSeatChart from "./DynamicSeatChart";
+import Example from "./Pie";
+import IconTabs from "./IconTabs";
 
 const parties = [
   {
@@ -12,7 +14,6 @@ const parties = [
     min: 300,
     max: 600,
   },
-
   {
     id: "LIB",
     name: "Liberal",
@@ -21,7 +22,6 @@ const parties = [
     min: 100,
     max: 400,
   },
-
   {
     id: "NPD",
     name: "NDP",
@@ -57,12 +57,15 @@ const parties = [
 ];
 
 const Simulation = () => {
+  const [selectedTab, setSelectedTab] = useState("2025");
+
   const [voteShares, setVoteShares] = useState(
     Object.fromEntries(parties.map((party) => [party.id, party.initialValue]))
   );
   const [seats, setSeats] = useState({});
   const [isDisabled, setIsDisabled] = useState({});
   const [isInitialized, setIsInitialized] = useState(false);
+  const [electionResult, setElectionResult] = useState([]);
 
   const calculateSeats = (newVoteShares) => {
     const seatCalculations = {
@@ -168,7 +171,17 @@ const Simulation = () => {
   };
 
   const handleSliderChangeEnd = () => {
-    setSeats(calculateSeats(voteShares));
+    const newSeats = calculateSeats(voteShares);
+    setSeats(newSeats);
+
+    const result = parties.map((party) => ({
+      label: party.id,
+      seats: newSeats[party.id],
+      votes: (voteShares[party.id] / 10).toFixed(1),
+      color: party.color,
+    }));
+
+    setElectionResult(result);
   };
 
   const totalVoteShare = Object.values(voteShares).reduce(
@@ -188,20 +201,24 @@ const Simulation = () => {
   }, [voteShares, totalVoteShare]);
 
   useEffect(() => {
-    // Calculate and set initial seats
     const initialSeats = calculateSeats(voteShares);
     setSeats(initialSeats);
-    console.log(isInitialized);
     setIsInitialized(true);
-    console.log("Initial Seats: ", initialSeats); // Debugging log
-  }, []); // Empty dependency array ensures this runs only once on mount
+
+    const result = parties.map((party) => ({
+      label: party.id,
+      seats: initialSeats[party.id],
+      votes: (voteShares[party.id] / 10).toFixed(1),
+      color: party.color,
+    }));
+
+    setElectionResult(result);
+  }, []);
 
   const getResult = () => {
     if ((seats.LIB == 0) & (seats.CONS == 0)) return "No seats";
-    if (seats.LIB >= 186)
-      return `Liberal Majority${seats.LIB < 180 ? " " : ""}`;
-    if (seats.CON >= 186)
-      return `Conservative Majority${seats.CON < 180 ? "" : ""}`;
+    if (seats.LIB >= 186) return `Liberal Majority`;
+    if (seats.CON >= 186) return `Conservative Majority`;
     if (seats.LIB === seats.CON) return "LPC-CPC tie";
     if (seats.LIB > seats.CON) return "Liberal Minority";
     return "Conservative Minority";
@@ -214,103 +231,133 @@ const Simulation = () => {
     if (partyName === "Green") return "bg-[#4fc957] border-[#4fc957]";
     if (partyName === "Bloc Québécois") return "bg-[#143278] border-[#143278]";
     if (partyName === "People's Party") return "bg-[#8c4bcc] border-[#8c4bcc]";
-    return "bg-[#808080] border-[#808080]"; // Default color
+    return "bg-[#808080] border-[#808080]";
   };
 
   return (
-    <div className="p-4 max-w-7xl mx-64">
-      <div className="flex flex-col lg:flex-row gap-6">
-        <div className="w-full lg:w-2/5 pl-8">
-          <h2 className="text-xl font-semibold font-degular mb-3 text-gray-800">
-            VOTE SHARE
-          </h2>
-          {parties.map((party) => (
-            <div key={party.id} className="mb-4">
-              <div className="flex items-center justify-between mb-1">
-                <p className="font-editorial-light text-2xl text-gray-800">
-                  {party.name}
-                </p>
+    <>
+      <div className="p-4 max-w-7xl mx-64">
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="w-full lg:w-2/5 pl-8">
+            <h2 className="text-xl font-semibold font-degular mb-3 text-gray-700">
+              VOTE SHARE
+            </h2>
+            {parties.map((party) => (
+              <div key={party.id} className="mb-4">
+                <div className="flex items-center justify-between mb-1">
+                  <p className="font-editorial-light text-2xl text-gray-800">
+                    {party.name}
+                  </p>
+                  <div className="flex items-center">
+                    <span className="font-mono text-sm mr-2 w-12 text-right">
+                      {(voteShares[party.id] / 10).toFixed(1)}%
+                    </span>
+                    <div
+                      className="w-4 h-4 rounded-full mr-2 border"
+                      style={{
+                        borderColor: party.color,
+                        backgroundColor: `${party.color}59`,
+                      }}
+                    ></div>
+                    <span className="font-mono text-sm font-semibold w-4 text-center">
+                      {seats[party.id] || 0}
+                    </span>
+                  </div>
+                </div>
                 <div className="flex items-center">
-                  <span className="font-mono text-sm mr-2 w-12 text-right">
-                    {(voteShares[party.id] / 10).toFixed(1)}%
-                  </span>
-                  <div
-                    className="w-4 h-4 rounded-full mr-2 border"
-                    style={{
-                      borderColor: party.color,
-                      backgroundColor: `${party.color}59`, // 35% opacity
-                    }}
-                  ></div>
-                  <span className="font-mono text-sm font-semibold w-4 text-center">
-                    {seats[party.id] || 0}
-                  </span>
+                  <div className="w-full pr-12">
+                    <Slider
+                      step={1}
+                      renderThumb={(props) => (
+                        <div
+                          {...props}
+                          className={`group p-2 top-1/2 ${getThumbColor(
+                            party.name
+                          )} bg-opacity-35 border shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing`}
+                        />
+                      )}
+                      aria-label={party.name}
+                      hideValue={true}
+                      maxValue={party.max}
+                      minValue={party.min}
+                      hideThumb={false}
+                      defaultValue={party.initialValue}
+                      value={voteShares[party.id]}
+                      onChange={(value) => handleSliderChange(party.id, value)}
+                      onChangeEnd={handleSliderChangeEnd}
+                      disabled={isDisabled[party.id]}
+                      className="max-w-full"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="w-full pr-12">
-                  <Slider
-                    step={1}
-                    renderThumb={(props) => (
-                      <div
-                        {...props}
-                        className={`group p-2 top-1/2 ${getThumbColor(
-                          party.name
-                        )} bg-opacity-35 border shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing`}
-                      />
-                    )}
-                    aria-label={party.name}
-                    hideValue={true}
-                    maxValue={party.max}
-                    minValue={party.min}
-                    hideThumb={false}
-                    defaultValue={party.initialValue}
-                    value={voteShares[party.id]}
-                    onChange={(value) => handleSliderChange(party.id, value)}
-                    onChangeEnd={handleSliderChangeEnd} // Added this line
-                    disabled={isDisabled[party.id]}
-                    className="max-w-full"
-                  />
-                </div>
+            ))}
+            <div className="mt-6">
+              <div className="flex items-center justify-between mb-1">
+                <p className="font-editorial-light text-xl font-light">
+                  Total Vote Share
+                </p>
+                <span className="font-mono text-sm w-12 text-right">
+                  {totalVoteShare.toFixed(1)}%
+                </span>
               </div>
+              <Slider
+                step={0.1}
+                maxValue={100}
+                minValue={56.3}
+                value={totalVoteShare}
+                readOnly
+                aria-label="Total Vote Share"
+                hideThumb={false}
+                className="max-w-full"
+              />
             </div>
-          ))}
-          <div className="mt-6">
-            <div className="flex items-center justify-between mb-1">
-              <p className="font-editorial-light text-xl font-light">
-                Total Vote Share
-              </p>
-              <span className="font-mono text-sm w-12 text-right">
-                {totalVoteShare.toFixed(1)}%
-              </span>
-            </div>
-            <Slider
-              step={0.1}
-              maxValue={100}
-              minValue={56.3}
-              value={totalVoteShare}
-              readOnly
-              aria-label="Total Vote Share"
-              hideThumb={false}
-              className="max-w-full"
-            />
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
-          <h2 className="text-xl font-semibold mb-3 text-center font-degular text-gray-800">
-            SEAT DISTRIBUTION
-          </h2>
-          <div className="justify-center items-center mt-12">
-            {isInitialized && <DynamicSeatChart seats={seats} />}
-            <div
-              className="mt-2 text-xl font-degular font-semibold text-center"
-              style={{ marginTop: "-12rem" }}
-            >
-              {getResult().toUpperCase()}
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-xl font-semibold mb-3 text-center font-degular text-gray-700">
+              SEAT DISTRIBUTION
+            </h2>
+            <div className="justify-center items-center mt-12">
+              {isInitialized && <DynamicSeatChart seats={seats} />}
+              <div
+                className="mt-2 text-2xl font-degular  text-center text-gray-700"
+                style={{ marginTop: "-12rem" }}
+              >
+                {getResult()}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="font-sans px-12 py-2 relative max-w-4xl mx-auto">
+        <div className="mb-8">
+          <h2 className="text-4xl text-left font-editorial-light text-gray-800">
+            Data Collection
+          </h2>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
+            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
+            arcu, a volutpat nisi erat non libero.
+          </p>
+        </div>
+      </div>
+      <IconTabs
+        center={true}
+        selectedTab={selectedTab}
+        setSelectedTab={setSelectedTab}
+      />
+      <div className="flex justify-center">
+        <Example
+          width={700}
+          height={700}
+          year={selectedTab}
+          electionResult={electionResult}
+        />
+      </div>
+    </>
   );
 };
+
 export default Simulation;

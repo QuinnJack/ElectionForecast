@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Pie, { ProvidedProps, PieArcDatum } from "@visx/shape/lib/shapes/Pie";
 import { Group } from "@visx/group";
 import { animated, useTransition, interpolate } from "@react-spring/web";
-import IconTabs from "./IconTabs";
 
 interface PartyInfo {
   label: string;
@@ -17,7 +16,7 @@ interface ElectionData {
 
 const electionData = {
   totalSeats: {
-    2024: 343,
+    2025: 343,
     2021: 338,
     2019: 338,
     2015: 338,
@@ -27,12 +26,12 @@ const electionData = {
     2004: 308,
   },
   2025: [
-    { label: "PP", seats: 0, votes: 4.9, color: "rgba(140,75,204,0.7)" },
-    { label: "GPC", seats: 2, votes: 2.3, color: "rgba(79,201,87,0.7)" },
-    { label: "BQ", seats: 32, votes: 7.6, color: "rgba(21,50,120,0.7)" },
-    { label: "NDP", seats: 25, votes: 17.8, color: "rgba(255,157,38,0.7)" },
-    { label: "LPC", seats: 160, votes: 32.6, color: "rgba(255,41,48,0.7)" },
-    { label: "CPC", seats: 119, votes: 33.7, color: "rgba(23,165,255,0.7)" },
+    { label: "PP", seats: 4, votes: 0, color: "rgba(140,75,204,0.7)" }, // PP
+    { label: "GPC", seats: 0, votes: 0, color: "rgba(79,201,87,0.7)" }, // GPC
+    { label: "BQ", seats: 0, votes: 0, color: "rgba(21,50,120,0.7)" }, // BQ
+    { label: "NDP", seats: 0, votes: 0, color: "rgba(255,157,38,0.7)" }, // NDP
+    { label: "LPC", seats: 0, votes: 0, color: "rgba(255,41,48,0.7)" }, // LPC
+    { label: "CPC", seats: 0, votes: 0, color: "rgba(23,165,255,0.7)" }, // CPC
   ],
   2021: [
     { label: "PP", seats: 0, votes: 4.9, color: "rgba(140,75,204,0.7)" },
@@ -100,6 +99,7 @@ export type PieProps = {
   animate?: boolean;
   borderOpacity?: number;
   year?: number;
+  electionResult?: PartyInfo[];
 };
 
 export default function Example({
@@ -109,14 +109,39 @@ export default function Example({
   animate = true,
   borderOpacity = 0.9,
   year = 2019,
+  electionResult,
 }: PieProps) {
-  const [selectedParty, setSelectedParty] = useState<string | null>(null);
-  const [parties, setParties] = useState<PartyInfo[]>(electionData[year] || []);
-  const totalSeats = electionData.totalSeats[year] || 0;
+  // For seats
+  electionData[2025][0].seats =
+    (electionResult && electionResult[5]?.seats) || 0; // PP
+  electionData[2025][1].seats =
+    (electionResult && electionResult[3]?.seats) || 0; // GPC
+  electionData[2025][2].seats =
+    (electionResult && electionResult[4]?.seats) || 0; // BQ
+  electionData[2025][3].seats =
+    (electionResult && electionResult[2]?.seats) || 0; // NDP
+  electionData[2025][4].seats =
+    (electionResult && electionResult[1]?.seats) || 0; // LPC
+  electionData[2025][5].seats =
+    (electionResult && electionResult[0]?.seats) || 0; // CPC
 
-  useEffect(() => {
-    setParties(electionData[year] || []);
-  }, [year]);
+  // For vote share
+  electionData[2025][0].votes =
+    (electionResult && electionResult[5]?.votes) || 0; // PP
+  electionData[2025][1].votes =
+    (electionResult && electionResult[3]?.votes) || 0; // GPC
+  electionData[2025][2].votes =
+    (electionResult && electionResult[4]?.votes) || 0; // BQ
+  electionData[2025][3].votes =
+    (electionResult && electionResult[2]?.votes) || 0; // NDP
+  electionData[2025][4].votes =
+    (electionResult && electionResult[1]?.votes) || 0; // LPC
+  electionData[2025][5].votes =
+    (electionResult && electionResult[0]?.votes) || 0; // CPC
+
+  const [selectedParty, setSelectedParty] = useState<string | null>(null);
+  const parties = electionData[year] || [];
+  const totalSeats = electionData.totalSeats[year] || 0;
 
   if (width < 10) return null;
 
@@ -286,7 +311,7 @@ function AnimatedPie<Datum>({
     const expectedSeats = calculateExpectedSeats(data.votes);
 
     // Determine text color for selected state
-    const selectedTextColor = data.label === "PP" ? "#68438c" : "white";
+    const selectedTextColor = data.seats === 0 ? data.color : "white";
 
     return (
       <>
@@ -304,7 +329,6 @@ function AnimatedPie<Datum>({
             fill={getColor(arc)}
             onClick={() => onClickDatum(arc)}
             onTouchStart={() => onClickDatum(arc)}
-            stroke={getColor(arc)}
             strokeWidth={1.5}
             strokeOpacity={borderOpacity}
           />

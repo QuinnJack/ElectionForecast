@@ -111,9 +111,8 @@ const DynamicSeatChart = ({ seats }) => {
                 stackId="a"
                 cornerRadius={5}
                 fill={config.color}
-                stroke={config.darkendColor}
-                strokeWidth={1}
-                className="stroke-transparent stroke-1"
+                stroke="white"
+                strokeWidth={2}
               />
             ))}
           </RadialBarChart>
