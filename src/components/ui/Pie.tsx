@@ -299,8 +299,6 @@ function AnimatedPie<Datum>({
                   ...arc,
                   startAngle,
                   endAngle,
-                  outerRadius: expandedRadius,
-                  innerRadius,
                 })
             )}
             fill={getColor(arc)}

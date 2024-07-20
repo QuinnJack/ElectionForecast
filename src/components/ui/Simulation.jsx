@@ -7,7 +7,7 @@ const parties = [
   {
     id: "CON",
     name: "Conservative",
-    initialValue: 420,
+    initialValue: 430,
     color: "#12A7FF",
     min: 300,
     max: 600,
@@ -16,7 +16,7 @@ const parties = [
   {
     id: "LIB",
     name: "Liberal",
-    initialValue: 240,
+    initialValue: 250,
     color: "#ff2930",
     min: 100,
     max: 400,
@@ -25,7 +25,7 @@ const parties = [
   {
     id: "NPD",
     name: "NDP",
-    initialValue: 173,
+    initialValue: 176,
     color: "#ff9d26",
     min: 100,
     max: 300,
@@ -33,7 +33,7 @@ const parties = [
   {
     id: "GRN",
     name: "Green",
-    initialValue: 37,
+    initialValue: 40,
     color: "#4fc957",
     min: 10,
     max: 100,
@@ -41,7 +41,7 @@ const parties = [
   {
     id: "BQ",
     name: "Bloc Québécois",
-    initialValue: 79,
+    initialValue: 78.6,
     color: "#143278",
     min: 50,
     max: 150,
@@ -56,7 +56,7 @@ const parties = [
   },
 ];
 
-const Simulator = () => {
+const Simulation = () => {
   const [voteShares, setVoteShares] = useState(
     Object.fromEntries(parties.map((party) => [party.id, party.initialValue]))
   );
@@ -313,4 +313,4 @@ const Simulator = () => {
     </div>
   );
 };
-export default Simulator;
+export default Simulation;
