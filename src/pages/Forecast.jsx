@@ -7,9 +7,9 @@ import Counter from "../components/ui/Counter"; // Ensure the correct path
 import CanadaMap from "react-canada-map";
 import Header from "../components/ui/Header";
 import Example from "../components/ui/Pie";
-
+import VoterTurnoutChart from "../components/ui/charts/voter-turnout";
 function Forecast() {
-  const [activeChart, setActiveChart] = useState("popularVote");
+  const [activeChart, setActiveChart] = useState("chance");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
   const [hoveredPartyInfo, setHoveredPartyInfo] = useState(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -149,15 +149,18 @@ function Forecast() {
                     activeChart === "seats" ? "block" : "hidden"
                   }`}
                 />
-                <DWChart
-                  title="Chart"
-                  src="//datawrapper.dwcdn.net/BWOZc/2/"
-                  className={`absolute inset-0 ${
-                    activeChart === "chance" ? "block" : "hidden"
-                  }`}
-                />
+                {activeChart === "chance" ? (
+                  <VoterTurnoutChart className="absolute inset-0 block" />
+                ) : (
+                  <DWChart
+                    title="Chart"
+                    src="//datawrapper.dwcdn.net/BWOZc/2/"
+                    className={`absolute inset-0 hidden`}
+                  />
+                )}
               </>
             )}
+
             <div className="absolute top-4 bottom-0 left-0 right-0 flex justify-between pointer-events-none p-4">
               <div className="flex flex-col justify-start items-start space-y-4">
                 {partyInfoData.slice(0, 3).map((info, index) => (

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/ui/Header";
 import PathTo343 from "../components/ui/PathTo343";
 import Example from "../components/ui/Pie";
+import VoterTurnoutChart from "../components/ui/charts/voter-turnout";
 
 function Methodology() {
   return (
@@ -99,6 +100,7 @@ function Methodology() {
           </p>
           <br />
         </div>
+        <VoterTurnoutChart />
         <PathTo343 />;
       </div>
     </div>

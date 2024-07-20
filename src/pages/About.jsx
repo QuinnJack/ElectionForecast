@@ -135,14 +135,14 @@ function Forecast() {
               <>
                 <DWChart
                   title="Chart"
-                  src="//datawrapper.dwcdn.net/dShUp/4/"
+                  src="//datawrapper.dwcdn.net/dShUp/5/"
                   className={`absolute inset-0 ${
                     activeChart === "popularVote" ? "block" : "hidden"
                   }`}
                 />
                 <DWChart
                   title="Chart"
-                  src="//datawrapper.dwcdn.net/JMBHw/9/"
+                  src="//datawrapper.dwcdn.net/JMBHw/10/"
                   className={`absolute inset-0 ${
                     activeChart === "seats" ? "block" : "hidden"
                   }`}
