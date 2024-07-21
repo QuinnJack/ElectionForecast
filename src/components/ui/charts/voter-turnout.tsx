@@ -2,28 +2,28 @@ import React from "react";
 import { Zoom } from "@visx/zoom";
 
 const VoterTurnoutChart = ({
-  width = 2812,
-  height = 1600,
-  style = { width: "1406px", height: "800px" },
+  width = "100%",
+  height = "100%",
+  style = { width: "100%", height: "100%" },
   ...props
 }) => {
   const initialScale = 1;
-  const centerX = width / 2;
-  const centerY = height / 2;
+  const centerX = 0; // Adjusted to center the map
+  const centerY = 0; // Adjusted to center the map
 
   return (
     <Zoom<SVGSVGElement>
-      width={width}
-      height={height}
-      scaleXMin={1}
-      scaleXMax={3}
-      scaleYMin={0.5}
-      scaleYMax={3}
+      width={2812} // Original width for Zoom
+      height={1600} // Original height for Zoom
+      scaleXMin={0.9}
+      scaleXMax={9}
+      scaleYMin={0.9}
+      scaleYMax={9}
       initialTransformMatrix={{
         scaleX: initialScale,
         scaleY: initialScale,
-        translateX: centerX,
-        translateY: centerY,
+        translateX: -10,
+        translateY: 10,
         skewX: 0,
         skewY: 0,
       }}
@@ -939,23 +939,26 @@ const VoterTurnoutChart = ({
               onTouchStart={zoom.dragStart}
               onTouchMove={zoom.dragMove}
               onTouchEnd={zoom.dragEnd}
-              onMouseDown={zoom.dragStart}
-              onMouseMove={zoom.dragMove}
-              onMouseUp={zoom.dragEnd}
-              onMouseLeave={() => {
-                if (zoom.isDragging) zoom.dragEnd();
+              onMouseDown={(event) => {
+                zoom.dragStart(event);
+                (event.currentTarget as SVGRectElement).style.cursor =
+                  "grabbing";
               }}
+              onMouseMove={zoom.dragMove}
+              onMouseUp={(event) => {
+                zoom.dragEnd();
+                (event.currentTarget as SVGRectElement).style.cursor = "grab";
+              }}
+              onMouseLeave={(event) => {
+                if (zoom.isDragging) {
+                  zoom.dragEnd();
+                  (event.currentTarget as SVGRectElement).style.cursor = "grab";
+                }
+              }}
+              style={{ cursor: zoom.isDragging ? "grabbing" : "grab" }}
             />
           </svg>
-          <div className="controls">
-            <button onClick={() => zoom.scale({ scaleX: 1.2, scaleY: 1.2 })}>
-              +
-            </button>
-            <button onClick={() => zoom.scale({ scaleX: 0.8, scaleY: 0.8 })}>
-              -
-            </button>
-            <button onClick={zoom.reset}>Reset</button>
-          </div>
+          <div className="controls"></div>
         </div>
       )}
     </Zoom>
