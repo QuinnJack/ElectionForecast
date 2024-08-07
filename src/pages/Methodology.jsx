@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Header from "../components/ui/Header";
-import SVGComponent from "../components/ui/charts/SVGComponent";
+import SVGComponent from "../components/charts/SVGComponent";
 import Example from "../components/ui/Pie";
-import VoterTurnoutChart from "../components/ui/charts/voter-turnout";
+import VoterTurnoutChart from "../components/charts/voter-turnout";
 
 function Methodology() {
   return (
