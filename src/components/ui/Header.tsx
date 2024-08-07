@@ -15,16 +15,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <span className="relative group inline-block overflow-hidden">
-                <img
-                  src="/black.png"
-                  alt="Logo"
-                  className="h-10 w-auto transition-all duration-700 ease-in-out transform group-hover:opacity-0 group-hover:scale-105"
-                />
-                <img
-                  src="/color.png"
-                  alt="Colored Logo"
-                  className="absolute inset-0 h-10 w-auto opacity-0 transition-all duration-700 ease-in-out transform group-hover:opacity-100 group-hover:scale-105"
-                />
+                <img src="/black.png" alt="Logo" className="h-10 w-auto" />
               </span>
             </div>
             <nav className="ml-6">

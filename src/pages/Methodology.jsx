@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "../components/ui/Header";
-import PathTo343 from "../components/ui/PathTo343";
+import SVGComponent from "../components/ui/charts/SVGComponent";
 import Example from "../components/ui/Pie";
 import VoterTurnoutChart from "../components/ui/charts/voter-turnout";
 
@@ -101,7 +101,7 @@ function Methodology() {
           <br />
         </div>
         <VoterTurnoutChart />
-        <PathTo343 />;
+        <SVGComponent />;
       </div>
     </div>
   );
