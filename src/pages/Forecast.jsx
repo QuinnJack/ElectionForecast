@@ -11,6 +11,8 @@ import VoterTurnoutChart from "../components/ui/charts/voter-turnout";
 import SVGComponent from "../components/ui/charts/SVGComponent";
 import WinnerChart from "../components/ui/charts/WinnerChart";
 import PathTo343 from "../components/ui/charts/PathTo343";
+import Histogram from "../components/ui/charts/Histogram";
+
 function Forecast() {
   const [activeChart, setActiveChart] = useState("chance");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -112,12 +114,11 @@ function Forecast() {
 
   return (
     <div>
-      {" "}
       <Header />
       <div className="font-sans p-8 relative" onMouseMove={handleMouseMove}>
         <div className="mb-8">
           <h1 className="text-7xl text-center font-editorial text-gray-800">
-            Federal Forecast
+            Federal Forecast!
           </h1>
           <br />
           <p className="text-center text-2xl font-degular font-light text-gray-500">
@@ -132,7 +133,6 @@ function Forecast() {
               onTabChange={(value) => setActiveChart(value)}
             />
           </div>
-
           <div className="relative h-[800px]">
             {!isScriptLoaded ? (
               <Loading />
@@ -152,22 +152,13 @@ function Forecast() {
                     activeChart === "seats" ? "block" : "hidden"
                   }`}
                 />
-
-                {activeChart === "chance" ? (
-                  <>
-                    {" "}
-                    <div className="absolute inset-0 block border-2 border-red-500">
-                      {" "}
-                      <WinnerChart />
-                    </div>
-                  </>
-                ) : (
-                  <DWChart
-                    title="Chart"
-                    src="//datawrapper.dwcdn.net/BWOZc/2/"
-                    className={`absolute inset-0 hidden`}
-                  />
-                )}
+                <DWChart
+                  title="Chart"
+                  src="//datawrapper.dwcdn.net/BWOZc/2/"
+                  className={`absolute inset-0 ${
+                    activeChart === "chance" ? "block" : "hidden"
+                  }`}
+                />
               </>
             )}
 
@@ -351,12 +342,33 @@ function Forecast() {
           <h2 className="text-5xl  text-center font-editorial-light text-gray-800">
             Path to 343
           </h2>
-        </div>
-      </div>
-      <div className="flex justify-center items-center  w-full h-full">
-        <div className="w-11/12 h-11/12">
-          <PathTo343 className="w-full h-full" />
           <br />
+          <div className="flex justify-center mb-4">
+            <LineTabs
+              tabs={tabs}
+              activeTab={activeChart}
+              onTabChange={(value) => setActiveChart(value)}
+            />
+          </div>
+          <div className="flex justify-center items-center w-full h-full">
+            {/* Preload SVG components by rendering them hidden */}
+            <div className="hidden">
+              <PathTo343 />
+              <Histogram />
+            </div>
+
+            {activeChart === "popularVote" ? (
+              <div className="flex justify-center items-center h-full">
+                <p className="text-2xl font-light text-gray-500">
+                  Placeholder for Popular Vote Chart
+                </p>
+              </div>
+            ) : activeChart === "seats" ? (
+              <PathTo343 className="w-full h-full" />
+            ) : (
+              <Histogram className="w-full h-full" />
+            )}
+          </div>
         </div>
       </div>
     </div>
