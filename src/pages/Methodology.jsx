@@ -3,7 +3,22 @@ import Header from "../components/ui/Header";
 import SVGComponent from "../components/charts/SVGComponent";
 import Example from "../components/ui/Pie";
 import VoterTurnoutChart from "../components/charts/voter-turnout";
-
+import CorrelationMap from "../components/charts/correlation";
+const rankings = [
+  "Alberta",
+  "British Columbia",
+  "Manitoba",
+  "New Brunswick",
+  "Newfoundland and Labrador",
+  "Northwest Territories",
+  "Nova Scotia",
+  "Nunavut",
+  "Ontario",
+  "Prince Edward Island",
+  "Quebec",
+  "Saskatchewan",
+  "Yukon",
+];
 function Methodology() {
   return (
     <div>
@@ -27,6 +42,9 @@ function Methodology() {
           </h2>
           <br />
           <p className="text-left  font-degular text-lg text-gray-600">
+            <div className="flex justify-center">
+              <CorrelationMap rankings={rankings} />
+            </div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
             Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper

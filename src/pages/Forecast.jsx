@@ -12,7 +12,7 @@ import SVGComponent from "../components/charts/SVGComponent";
 import WinnerChart from "../components/charts/WinnerChart";
 import PathTo343 from "../components/charts/PathTo343";
 import Histogram from "../components/charts/Histogram";
-
+import PieChartSVG from "../components/charts/PieChartSVG";
 function Forecast() {
   const [activeChart, setActiveChart] = useState("chance");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -358,11 +358,7 @@ function Forecast() {
             </div>
 
             {activeChart === "popularVote" ? (
-              <div className="flex justify-center items-center h-full">
-                <p className="text-2xl font-light text-gray-500">
-                  Placeholder for Popular Vote Chart
-                </p>
-              </div>
+              <PieChartSVG className="w-full h-full" />
             ) : activeChart === "seats" ? (
               <PathTo343 className="w-full h-full" />
             ) : (
