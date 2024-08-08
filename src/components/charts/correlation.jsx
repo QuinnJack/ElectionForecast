@@ -2,22 +2,22 @@ import React from "react";
 
 const CorrleationMap = ({ rankings }) => {
   const colors = [
-    "#E994FF", // Color for rank 1
-    "#DDA3FE",
-    "#CDB2FE",
-    "#BEBFFF",
-    "#AFCBFE",
-    "#A1D6FE",
-    "#93E0FE",
-    "#85EAFC",
-    "#78F2FB",
-    "#6AF9F7",
-    "#5DFFEF",
-    "#50FFE4",
-    "#43FFD6", // Color for rank 13
-    "#03C181", // Color for the last rank
-  ];
+    "#ff61be",
+    "#ff79c8",
+    "#ff8ed0",
+    "#ffa8db",
+    "#ffc3e7",
+    "#ffddf1",
+    "ffeff8",
 
+    "#e9fff9",
+    "#d6f9ed",
+    "#c5f7e6",
+    "#b0f4dd",
+    "#82eac6",
+    "#56e9b9", // Color for the last rank
+    "#35e4aa", // Color for the last rank
+  ];
   const provinceColors = rankings.reduce((acc, province, index) => {
     acc[province] = colors[index];
     return acc;
@@ -25,11 +25,11 @@ const CorrleationMap = ({ rankings }) => {
 
   return (
     <svg
-      viewBox="4 4 1200 1000"
+      viewBox="0 100 1200 800" // Adjusted viewBox to reduce only vertical white space
       aria-label="Map of Canada, Lambert Projection"
       version="1.1"
-      width="1200"
-      height="1000"
+      width="1400"
+      height="750"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

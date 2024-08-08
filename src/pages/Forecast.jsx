@@ -7,8 +7,7 @@ import Counter from "../components/ui/Counter"; // Ensure the correct path
 import CanadaMap from "react-canada-map";
 import Header from "../components/ui/Header";
 import Example from "../components/ui/Pie";
-import VoterTurnoutChart from "../components/charts/voter-turnout";
-import SVGComponent from "../components/charts/SVGComponent";
+
 import WinnerChart from "../components/charts/WinnerChart";
 import PathTo343 from "../components/charts/PathTo343";
 import Histogram from "../components/charts/Histogram";
