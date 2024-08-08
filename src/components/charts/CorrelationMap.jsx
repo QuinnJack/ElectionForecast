@@ -1,6 +1,5 @@
 import React from "react";
-
-const CorrleationMap = ({ rankings }) => {
+const CorrelationMap = ({ rankings, onProvinceHover }) => {
   const colors = [
     "#ff61be",
     "#ff79c8",
@@ -35,6 +34,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="ab"
         name="Alberta"
+        onMouseEnter={() => onProvinceHover("AB")}
         style={{
           fill: provinceColors["Alberta"],
           stroke: "#000000",
@@ -46,6 +46,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="bc"
         name="British Columbia"
+        onMouseEnter={() => onProvinceHover("BC")}
         style={{
           fill: provinceColors["British Columbia"],
           stroke: "#000000",
@@ -57,6 +58,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="mb"
         name="Manitoba"
+        onMouseEnter={() => onProvinceHover("MB")}
         style={{
           fill: provinceColors["Manitoba"],
           stroke: "#000000",
@@ -68,6 +70,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="nb"
         name="New Brunswick"
+        onMouseEnter={() => onProvinceHover("NB")}
         style={{
           fill: provinceColors["New Brunswick"],
           stroke: "#000000",
@@ -79,6 +82,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="nl"
         name="Newfoundland and Labrador"
+        onMouseEnter={() => onProvinceHover("NL")}
         style={{
           fill: provinceColors["Newfoundland and Labrador"],
           stroke: "#000000",
@@ -90,6 +94,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="nt"
         name="Northwest Territories"
+        onMouseEnter={() => onProvinceHover("NT")}
         style={{
           fill: provinceColors["Northwest Territories"],
           stroke: "#000000",
@@ -101,6 +106,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="ns"
         name="Nova Scotia"
+        onMouseEnter={() => onProvinceHover("NS")}
         style={{
           fill: provinceColors["Nova Scotia"],
           stroke: "#000000",
@@ -112,6 +118,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="nu"
         name="Nunavut"
+        onMouseEnter={() => onProvinceHover("NU")}
         style={{
           fill: provinceColors["Nunavut"],
           stroke: "#000000",
@@ -123,6 +130,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="on"
         name="Ontario"
+        onMouseEnter={() => onProvinceHover("ON")}
         style={{
           fill: provinceColors["Ontario"],
           stroke: "#000000",
@@ -134,6 +142,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="pe"
         name="Prince Edward Island"
+        onMouseEnter={() => onProvinceHover("PE")}
         style={{
           fill: provinceColors["Prince Edward Island"],
           stroke: "#000000",
@@ -145,6 +154,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="qc"
         name="Quebec"
+        onMouseEnter={() => onProvinceHover("QC")}
         style={{
           fill: provinceColors["Quebec"],
           stroke: "#000000",
@@ -156,6 +166,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="sk"
         name="Saskatchewan"
+        onMouseEnter={() => onProvinceHover("SK")}
         style={{
           fill: provinceColors["Saskatchewan"],
           stroke: "#000000",
@@ -167,6 +178,7 @@ const CorrleationMap = ({ rankings }) => {
       <path
         id="yt"
         name="Yukon"
+        onMouseEnter={() => onProvinceHover("YT")}
         style={{
           fill: provinceColors["Yukon"],
           stroke: "#000000",
@@ -179,4 +191,4 @@ const CorrleationMap = ({ rankings }) => {
   );
 };
 
-export default CorrleationMap;
+export default CorrelationMap;

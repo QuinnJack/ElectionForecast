@@ -116,7 +116,7 @@ function Forecast() {
       <div className="font-sans p-8 relative" onMouseMove={handleMouseMove}>
         <div className="mb-8">
           <h1 className="text-7xl text-center font-editorial text-gray-800">
-            Federal Forecast!
+            Federal Forecast
           </h1>
           <br />
           <p className="text-center text-2xl font-degular font-light text-gray-500">

@@ -97,199 +97,199 @@ const rankingsData = {
     "Quebec",
   ],
   BC: [
-    "Nunavut",
     "British Columbia",
+    "Yukon",
     "Ontario",
     "Alberta",
-    "Nova Scotia",
     "Manitoba",
     "Saskatchewan",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
+    "Nova Scotia",
+    "Nunavut",
     "Northwest Territories",
-    "Yukon",
-    "Quebec",
   ],
   YT: [
-    "Nunavut",
+    "Yukon",
     "British Columbia",
-    "Ontario",
     "Alberta",
-    "Nova Scotia",
-    "Manitoba",
+    "Northwest Territories",
+    "Ontario",
     "Saskatchewan",
+    "Manitoba",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
-    "Quebec",
+    "Nova Scotia",
+    "Nunavut",
   ],
   NT: [
+    "Northwest Territories",
+    "Yukon",
     "Nunavut",
+    "Alberta",
+    "Saskatchewan",
     "British Columbia",
     "Ontario",
-    "Alberta",
-    "Nova Scotia",
     "Manitoba",
-    "Saskatchewan",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
-    "Quebec",
+    "Nova Scotia",
   ],
   AB: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
     "Alberta",
-    "Nova Scotia",
-    "Manitoba",
     "Saskatchewan",
+    "British Columbia",
+    "Manitoba",
+    "Ontario",
+    "Yukon",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
+    "Nova Scotia",
+    "Nunavut",
     "Northwest Territories",
-    "Yukon",
-    "Quebec",
   ],
   SK: [
-    "Nunavut",
+    "Saskatchewan",
+    "Alberta",
+    "Manitoba",
     "British Columbia",
     "Ontario",
-    "Alberta",
-    "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
+    "Yukon",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
+    "Nova Scotia",
+    "Nunavut",
     "Northwest Territories",
-    "Yukon",
-    "Quebec",
   ],
   MB: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
-    "Alberta",
-    "Nova Scotia",
     "Manitoba",
     "Saskatchewan",
+    "Alberta",
+    "Ontario",
+    "British Columbia",
+    "Quebec",
+    "Yukon",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
+    "Nova Scotia",
+    "Nunavut",
     "Northwest Territories",
-    "Yukon",
-    "Quebec",
   ],
   NU: [
     "Nunavut",
+    "Northwest Territories",
+    "Yukon",
+    "Alberta",
+    "Saskatchewan",
+    "Manitoba",
     "British Columbia",
     "Ontario",
-    "Alberta",
-    "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
+    "Quebec",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
-    "Quebec",
+    "Nova Scotia",
   ],
   ON: [
-    "Nunavut",
-    "British Columbia",
     "Ontario",
-    "Alberta",
-    "Nova Scotia",
+    "Quebec",
+    "British Columbia",
     "Manitoba",
+    "Alberta",
     "Saskatchewan",
+    "Yukon",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
+    "Nova Scotia",
+    "Nunavut",
     "Northwest Territories",
-    "Yukon",
-    "Quebec",
   ],
   QC: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
-    "Alberta",
-    "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
-    "Newfoundland and Labrador",
-    "New Brunswick",
-    "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
     "Quebec",
+    "Ontario",
+    "New Brunswick",
+    "Newfoundland and Labrador",
+    "Prince Edward Island",
+    "Nova Scotia",
+    "British Columbia",
+    "Alberta",
+    "Saskatchewan",
+    "Manitoba",
+    "Yukon",
+    "Nunavut",
+    "Northwest Territories",
   ],
   NL: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
-    "Alberta",
-    "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
     "Newfoundland and Labrador",
+    "Nova Scotia",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
     "Quebec",
+    "Ontario",
+    "Alberta",
+    "British Columbia",
+    "Saskatchewan",
+    "Manitoba",
+    "Yukon",
+    "Nunavut",
+    "Northwest Territories",
   ],
   NB: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
-    "Alberta",
-    "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
-    "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
+    "Nova Scotia",
     "Quebec",
+    "Newfoundland and Labrador",
+    "Ontario",
+    "Alberta",
+    "British Columbia",
+    "Saskatchewan",
+    "Manitoba",
+    "Yukon",
+    "Nunavut",
+    "Northwest Territories",
   ],
   NS: [
-    "Nunavut",
-    "British Columbia",
-    "Ontario",
-    "Alberta",
     "Nova Scotia",
-    "Manitoba",
-    "Saskatchewan",
     "Newfoundland and Labrador",
     "New Brunswick",
     "Prince Edward Island",
-    "Northwest Territories",
-    "Yukon",
     "Quebec",
+    "Ontario",
+    "Alberta",
+    "British Columbia",
+    "Saskatchewan",
+    "Manitoba",
+    "Yukon",
+    "Nunavut",
+    "Northwest Territories",
   ],
   PE: [
-    "Nunavut",
-    "British Columbia",
+    "Prince Edward Island",
+    "Nova Scotia",
+    "New Brunswick",
+    "Newfoundland and Labrador",
+    "Quebec",
     "Ontario",
     "Alberta",
-    "Nova Scotia",
-    "Manitoba",
+    "British Columbia",
     "Saskatchewan",
-    "Newfoundland and Labrador",
-    "New Brunswick",
-    "Prince Edward Island",
-    "Northwest Territories",
+    "Manitoba",
     "Yukon",
-    "Quebec",
+    "Nunavut",
+    "Northwest Territories",
   ],
 };
 
@@ -321,28 +321,33 @@ function Methodology() {
   const [activeChart, setActiveChart] = useState("Voter Turnout");
   const [activeProvince, setActiveProvince] = useState("ON");
 
+  const handleProvinceHover = (province) => {
+    setActiveProvince(province);
+    setActiveChart(province);
+  };
+
   return (
     <div>
       <Header />
       <div className="font-sans p-8 relative mx-auto">
         <div className="max-w-4xl mx-auto mb-8">
-          <h1 className="text-6xl text-left font-editorial-light text-gray-800">
+          <h1 className="text-7xl text-center font-editorial text-gray-800">
             Methodology
           </h1>
           <br />
-          <p className="text-left font-regular font-degular text-lg text-gray-600 mb-8">
-            This section provides a detailed explanation of the methods and
-            approaches used in forecasting the upcoming Canadian 2025 federal
-            election. We're always striving to improve our forecasts, so please
-            let us know if you have any suggestions.
+          <p className="text-center text-2xl font-degular font-light text-gray-500">
+            An examination of the methods and approaches used in forecasting
+            upcoming elections.
           </p>
+          <br />
+
           <br />
           <h2 className="text-4xl text-left font-editorial-light text-gray-800">
             Data Collection
           </h2>
           <br />
         </div>
-        <div className="flex justify-center mb-0">
+        <div className="flex justify-center mb-0 mx-24">
           <LineSVG />
         </div>
         <div className="flex justify-center">
@@ -350,6 +355,7 @@ function Methodology() {
             tabs={tabs}
             activeTab={activeChart}
             onTabChange={(value) => setActiveChart(value)}
+            type="tabs"
           />
         </div>
         <div className="flex justify-center">
@@ -357,11 +363,15 @@ function Methodology() {
             tabs={provincesAndTerritories}
             activeTab={activeChart}
             onTabChange={(value) => setActiveChart(value)}
+            type="provinces"
           />
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center">
-            <CorrelationMap rankings={rankingsData[activeChart]} />
+            <CorrelationMap
+              rankings={rankingsData[activeChart]}
+              onProvinceHover={handleProvinceHover}
+            />
           </div>
 
           <p className="text-left font-degular text-lg text-gray-600">
