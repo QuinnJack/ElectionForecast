@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Header from "../components/ui/Header";
 import Example from "../components/ui/Pie";
-import CorrelationMap from "../components/charts/correlation";
-import ButtonShapeHoverTabs from "../components/ui/ButtonShapeHoverTabs"; // Adjust the import path as necessary
-import LineSVG from "../components/charts/LineSVG";
+import CorrelationMap from "../components/charts/CorrelationMap";
+import ButtonShapeHoverTabs from "../components/ui/ButtonShapeHoverTabs";
+import LineSVG from "../components/charts/NumberLine";
+
 const rankingsData = {
   "Voter Turnout": [
     "Ontario",

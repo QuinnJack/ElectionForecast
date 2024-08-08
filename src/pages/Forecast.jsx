@@ -8,10 +8,9 @@ import CanadaMap from "react-canada-map";
 import Header from "../components/ui/Header";
 import Example from "../components/ui/Pie";
 
-import WinnerChart from "../components/charts/WinnerChart";
-import PathTo343 from "../components/charts/PathTo343";
-import Histogram from "../components/charts/Histogram";
-import PieChartSVG from "../components/charts/PieChartSVG";
+import SeatsPath from "../components/charts/SeatsPath";
+import Histogram from "../components/charts/HistogramChart";
+import VotePieChart from "../components/charts/VotePieChart";
 function Forecast() {
   const [activeChart, setActiveChart] = useState("chance");
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -352,14 +351,14 @@ function Forecast() {
           <div className="flex justify-center items-center w-full h-full">
             {/* Preload SVG components by rendering them hidden */}
             <div className="hidden">
-              <PathTo343 />
+              <SeatsPath />
               <Histogram />
             </div>
 
             {activeChart === "popularVote" ? (
-              <PieChartSVG className="w-full h-full" />
+              <VotePieChart className="w-full h-full" />
             ) : activeChart === "seats" ? (
-              <PathTo343 className="w-full h-full" />
+              <SeatsPath className="w-full h-full" />
             ) : (
               <Histogram className="w-full h-full" />
             )}

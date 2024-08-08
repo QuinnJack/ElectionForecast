@@ -1,5 +1,5 @@
 import * as React from "react";
-const SVGComponent = (props) => (
+const VotePieChart = (props) => (
   <svg
     width={1772.5}
     height={1200.5}
@@ -523,4 +523,4 @@ const SVGComponent = (props) => (
     </g>
   </svg>
 );
-export default SVGComponent;
+export default VotePieChart;

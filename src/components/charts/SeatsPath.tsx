@@ -1,5 +1,5 @@
 import * as React from "react";
-const PathTo343 = (props) => (
+const SeatsPath = (props) => (
   <svg
     width={1773}
     height={1007}
@@ -4779,4 +4779,4 @@ const PathTo343 = (props) => (
     </g>
   </svg>
 );
-export default PathTo343;
+export default SeatsPath;
