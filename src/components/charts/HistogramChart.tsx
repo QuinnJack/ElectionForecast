@@ -1,8 +1,14 @@
 import * as React from "react";
-const Histogram = (props) => (
+
+interface HistogramProps {
+  width?: number;
+  height?: number;
+}
+
+const Histogram: React.FC<HistogramProps> = (props) => (
   <svg
-    width={1773}
-    height={1007}
+    width={props.width ?? 1773}
+    height={props.height ?? 1007}
     viewBox="0 0 1773 1007"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -57,8 +63,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56751"
@@ -68,8 +74,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56753"
@@ -79,8 +85,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56755"
@@ -90,8 +96,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56765"
@@ -101,8 +107,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56767"
@@ -112,8 +118,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56769"
@@ -123,8 +129,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56771"
@@ -134,8 +140,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56781"
@@ -145,8 +151,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56783"
@@ -156,8 +162,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56799"
@@ -167,8 +173,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56801"
@@ -178,8 +184,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56803"
@@ -189,8 +195,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56805"
@@ -200,8 +206,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56823"
@@ -211,8 +217,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56825"
@@ -222,8 +228,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56827"
@@ -233,8 +239,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56829"
@@ -244,8 +250,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56833"
@@ -255,8 +261,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56835"
@@ -266,8 +272,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56837"
@@ -277,8 +283,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56839"
@@ -288,8 +294,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56849"
@@ -299,8 +305,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56851"
@@ -310,8 +316,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56853"
@@ -321,8 +327,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56855"
@@ -332,8 +338,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56863"
@@ -343,8 +349,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56865"
@@ -354,8 +360,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56875"
@@ -365,8 +371,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56877"
@@ -376,8 +382,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56883"
@@ -387,8 +393,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56885"
@@ -398,8 +404,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56891"
@@ -409,8 +415,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56895"
@@ -420,8 +426,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56897"
@@ -431,8 +437,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56903"
@@ -442,8 +448,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56905"
@@ -453,8 +459,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56911"
@@ -464,8 +470,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56915"
@@ -475,8 +481,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56917"
@@ -486,8 +492,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56925"
@@ -497,8 +503,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56927"
@@ -508,8 +514,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56937"
@@ -519,8 +525,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56945"
@@ -530,8 +536,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56951"
@@ -541,8 +547,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56953"
@@ -552,8 +558,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56955"
@@ -563,8 +569,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56961"
@@ -574,8 +580,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56963"
@@ -585,8 +591,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56965"
@@ -596,8 +602,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56969"
@@ -607,8 +613,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56973"
@@ -618,8 +624,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56975"
@@ -629,8 +635,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56981"
@@ -640,8 +646,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter56983"
@@ -651,8 +657,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57005"
@@ -662,8 +668,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57007"
@@ -673,8 +679,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57009"
@@ -684,8 +690,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57013"
@@ -695,8 +701,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57015"
@@ -706,8 +712,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57017"
@@ -717,8 +723,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57029"
@@ -728,8 +734,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57031"
@@ -739,8 +745,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57033"
@@ -750,8 +756,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57035"
@@ -761,8 +767,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57037"
@@ -772,8 +778,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57039"
@@ -783,8 +789,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57041"
@@ -794,8 +800,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57043"
@@ -805,8 +811,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57045"
@@ -816,8 +822,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57047"
@@ -827,8 +833,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57049"
@@ -838,8 +844,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57051"
@@ -849,8 +855,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57053"
@@ -860,8 +866,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57055"
@@ -871,8 +877,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57057"
@@ -882,8 +888,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57065"
@@ -893,8 +899,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57067"
@@ -904,8 +910,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57069"
@@ -915,8 +921,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57071"
@@ -926,8 +932,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57089"
@@ -937,8 +943,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57091"
@@ -948,8 +954,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57093"
@@ -959,8 +965,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57095"
@@ -970,8 +976,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57113"
@@ -981,8 +987,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57115"
@@ -992,8 +998,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57119"
@@ -1003,8 +1009,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57121"
@@ -1014,8 +1020,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57123"
@@ -1025,8 +1031,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57125"
@@ -1036,8 +1042,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57135"
@@ -1047,8 +1053,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57137"
@@ -1058,8 +1064,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57139"
@@ -1069,8 +1075,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57141"
@@ -1080,8 +1086,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57147"
@@ -1091,8 +1097,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57149"
@@ -1102,8 +1108,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57151"
@@ -1113,8 +1119,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57157"
@@ -1124,8 +1130,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57163"
@@ -1135,8 +1141,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57165"
@@ -1146,8 +1152,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57181"
@@ -1157,8 +1163,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57183"
@@ -1168,8 +1174,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57185"
@@ -1179,8 +1185,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57187"
@@ -1190,8 +1196,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57193"
@@ -1201,8 +1207,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57199"
@@ -1212,8 +1218,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57205"
@@ -1223,8 +1229,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57207"
@@ -1234,8 +1240,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57209"
@@ -1245,8 +1251,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57211"
@@ -1256,8 +1262,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57213"
@@ -1267,8 +1273,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57219"
@@ -1278,8 +1284,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57225"
@@ -1289,8 +1295,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57233"
@@ -1300,8 +1306,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57235"
@@ -1311,8 +1317,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57241"
@@ -1322,8 +1328,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57243"
@@ -1333,8 +1339,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57245"
@@ -1344,8 +1350,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57251"
@@ -1355,8 +1361,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57257"
@@ -1366,8 +1372,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57265"
@@ -1377,8 +1383,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57267"
@@ -1388,8 +1394,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57269"
@@ -1399,8 +1405,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57271"
@@ -1410,8 +1416,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57273"
@@ -1421,8 +1427,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57275"
@@ -1432,8 +1438,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57281"
@@ -1443,8 +1449,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57287"
@@ -1454,8 +1460,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57293"
@@ -1465,8 +1471,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57295"
@@ -1476,8 +1482,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57299"
@@ -1487,8 +1493,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57317"
@@ -1498,8 +1504,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57319"
@@ -1509,8 +1515,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57321"
@@ -1520,8 +1526,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57323"
@@ -1531,8 +1537,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57325"
@@ -1542,8 +1548,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57347"
@@ -1553,8 +1559,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57349"
@@ -1564,8 +1570,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57351"
@@ -1575,8 +1581,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57353"
@@ -1586,8 +1592,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57355"
@@ -1597,8 +1603,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57357"
@@ -1608,8 +1614,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57359"
@@ -1619,8 +1625,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57361"
@@ -1630,8 +1636,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57377"
@@ -1641,8 +1647,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57379"
@@ -1652,8 +1658,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57381"
@@ -1663,8 +1669,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57383"
@@ -1674,8 +1680,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57391"
@@ -1685,8 +1691,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57393"
@@ -1696,8 +1702,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57395"
@@ -1707,8 +1713,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57397"
@@ -1718,8 +1724,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57407"
@@ -1729,8 +1735,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57409"
@@ -1740,8 +1746,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57411"
@@ -1751,8 +1757,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57413"
@@ -1762,8 +1768,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57421"
@@ -1773,8 +1779,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57423"
@@ -1784,8 +1790,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57425"
@@ -1795,8 +1801,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57427"
@@ -1806,8 +1812,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57451"
@@ -1817,8 +1823,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57453"
@@ -1828,8 +1834,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57455"
@@ -1839,8 +1845,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57457"
@@ -1850,8 +1856,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57463"
@@ -1861,8 +1867,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57467"
@@ -1872,8 +1878,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57469"
@@ -1883,8 +1889,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57471"
@@ -1894,8 +1900,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57473"
@@ -1905,8 +1911,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57485"
@@ -1916,8 +1922,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57487"
@@ -1927,8 +1933,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57489"
@@ -1938,8 +1944,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57491"
@@ -1949,8 +1955,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57495"
@@ -1960,8 +1966,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57497"
@@ -1971,8 +1977,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57499"
@@ -1982,8 +1988,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57501"
@@ -1993,8 +1999,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57507"
@@ -2004,8 +2010,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57509"
@@ -2015,8 +2021,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57515"
@@ -2026,8 +2032,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57517"
@@ -2037,8 +2043,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57519"
@@ -2048,8 +2054,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57521"
@@ -2059,8 +2065,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57523"
@@ -2070,8 +2076,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57529"
@@ -2081,8 +2087,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57531"
@@ -2092,8 +2098,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57533"
@@ -2103,8 +2109,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57535"
@@ -2114,8 +2120,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57541"
@@ -2125,8 +2131,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57543"
@@ -2136,8 +2142,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57555"
@@ -2147,8 +2153,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57557"
@@ -2158,8 +2164,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57559"
@@ -2169,8 +2175,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57565"
@@ -2180,8 +2186,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57567"
@@ -2191,8 +2197,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57569"
@@ -2202,8 +2208,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57575"
@@ -2213,8 +2219,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57577"
@@ -2224,8 +2230,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57583"
@@ -2235,8 +2241,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57585"
@@ -2246,8 +2252,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57587"
@@ -2257,8 +2263,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57589"
@@ -2268,8 +2274,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57591"
@@ -2279,8 +2285,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57593"
@@ -2290,8 +2296,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57597"
@@ -2301,8 +2307,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57599"
@@ -2312,8 +2318,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57601"
@@ -2323,8 +2329,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57603"
@@ -2334,8 +2340,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57609"
@@ -2345,8 +2351,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57611"
@@ -2356,8 +2362,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57621"
@@ -2367,8 +2373,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57631"
@@ -2378,8 +2384,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57677"
@@ -2389,8 +2395,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57679"
@@ -2400,8 +2406,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57681"
@@ -2411,8 +2417,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57683"
@@ -2422,8 +2428,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57685"
@@ -2433,8 +2439,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57687"
@@ -2444,8 +2450,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57689"
@@ -2455,8 +2461,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57691"
@@ -2466,8 +2472,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57693"
@@ -2477,8 +2483,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57695"
@@ -2488,8 +2494,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57697"
@@ -2499,8 +2505,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57699"
@@ -2510,8 +2516,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57701"
@@ -2521,8 +2527,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57703"
@@ -2532,8 +2538,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57725"
@@ -2543,8 +2549,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57727"
@@ -2554,8 +2560,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57729"
@@ -2565,8 +2571,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57731"
@@ -2576,8 +2582,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57733"
@@ -2587,8 +2593,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57755"
@@ -2598,8 +2604,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57757"
@@ -2609,8 +2615,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57759"
@@ -2620,8 +2626,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57761"
@@ -2631,8 +2637,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57763"
@@ -2642,8 +2648,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57765"
@@ -2653,8 +2659,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57767"
@@ -2664,8 +2670,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57769"
@@ -2675,8 +2681,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57793"
@@ -2686,8 +2692,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57795"
@@ -2697,8 +2703,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57797"
@@ -2708,8 +2714,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57799"
@@ -2719,8 +2725,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57823"
@@ -2730,8 +2736,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57825"
@@ -2741,8 +2747,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57827"
@@ -2752,8 +2758,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57829"
@@ -2763,8 +2769,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57831"
@@ -2774,8 +2780,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57847"
@@ -2785,8 +2791,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57849"
@@ -2796,8 +2802,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57851"
@@ -2807,8 +2813,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57853"
@@ -2818,8 +2824,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57855"
@@ -2829,8 +2835,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57857"
@@ -2840,8 +2846,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57859"
@@ -2851,8 +2857,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57861"
@@ -2862,8 +2868,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57863"
@@ -2873,8 +2879,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57879"
@@ -2884,8 +2890,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57881"
@@ -2895,8 +2901,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57883"
@@ -2906,8 +2912,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57885"
@@ -2917,8 +2923,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57887"
@@ -2928,8 +2934,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57905"
@@ -2939,8 +2945,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57907"
@@ -2950,8 +2956,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57909"
@@ -2961,8 +2967,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57911"
@@ -2972,8 +2978,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57913"
@@ -2983,8 +2989,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57915"
@@ -2994,8 +3000,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57917"
@@ -3005,8 +3011,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57919"
@@ -3016,8 +3022,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57921"
@@ -3027,8 +3033,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57935"
@@ -3038,8 +3044,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57937"
@@ -3049,8 +3055,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57939"
@@ -3060,8 +3066,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57941"
@@ -3071,8 +3077,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57943"
@@ -3082,8 +3088,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57945"
@@ -3093,8 +3099,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57947"
@@ -3104,8 +3110,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57949"
@@ -3115,8 +3121,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57963"
@@ -3126,8 +3132,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57965"
@@ -3137,8 +3143,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57967"
@@ -3148,8 +3154,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57969"
@@ -3159,8 +3165,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57971"
@@ -3170,8 +3176,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57973"
@@ -3181,8 +3187,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57975"
@@ -3192,8 +3198,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57977"
@@ -3203,8 +3209,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter57979"
@@ -3214,8 +3220,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58005"
@@ -3225,8 +3231,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58007"
@@ -3236,8 +3242,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58009"
@@ -3247,8 +3253,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58011"
@@ -3258,8 +3264,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58017"
@@ -3269,8 +3275,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58019"
@@ -3280,8 +3286,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58021"
@@ -3291,8 +3297,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58023"
@@ -3302,8 +3308,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58025"
@@ -3313,8 +3319,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58035"
@@ -3324,8 +3330,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58037"
@@ -3335,8 +3341,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58039"
@@ -3346,8 +3352,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58041"
@@ -3357,8 +3363,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58043"
@@ -3368,8 +3374,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58053"
@@ -3379,8 +3385,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58055"
@@ -3390,8 +3396,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58057"
@@ -3401,8 +3407,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58059"
@@ -3412,8 +3418,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58077"
@@ -3423,8 +3429,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58083"
@@ -3434,8 +3440,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58085"
@@ -3445,8 +3451,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58087"
@@ -3456,8 +3462,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58089"
@@ -3467,8 +3473,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58091"
@@ -3478,8 +3484,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58099"
@@ -3489,8 +3495,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58101"
@@ -3500,8 +3506,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58111"
@@ -3511,8 +3517,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58113"
@@ -3522,8 +3528,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58115"
@@ -3533,8 +3539,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58117"
@@ -3544,8 +3550,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58127"
@@ -3555,8 +3561,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58129"
@@ -3566,8 +3572,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58131"
@@ -3577,8 +3583,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58133"
@@ -3588,8 +3594,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58139"
@@ -3599,8 +3605,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58141"
@@ -3610,8 +3616,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58147"
@@ -3621,8 +3627,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58153"
@@ -3632,8 +3638,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58155"
@@ -3643,8 +3649,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58157"
@@ -3654,8 +3660,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58159"
@@ -3665,8 +3671,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58165"
@@ -3676,8 +3682,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58171"
@@ -3687,8 +3693,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58173"
@@ -3698,8 +3704,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58175"
@@ -3709,8 +3715,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58177"
@@ -3720,8 +3726,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58179"
@@ -3731,8 +3737,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58181"
@@ -3742,8 +3748,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58189"
@@ -3753,8 +3759,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58191"
@@ -3764,8 +3770,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58199"
@@ -3775,8 +3781,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58207"
@@ -3786,8 +3792,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58209"
@@ -3797,8 +3803,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58211"
@@ -3808,8 +3814,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58213"
@@ -3819,8 +3825,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58215"
@@ -3830,8 +3836,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58221"
@@ -3841,8 +3847,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58227"
@@ -3852,8 +3858,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58229"
@@ -3863,8 +3869,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58231"
@@ -3874,8 +3880,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58233"
@@ -3885,8 +3891,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58237"
@@ -3896,8 +3902,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58239"
@@ -3907,8 +3913,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58241"
@@ -3918,8 +3924,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58243"
@@ -3929,8 +3935,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58245"
@@ -3940,8 +3946,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58247"
@@ -3951,8 +3957,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58261"
@@ -3962,8 +3968,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58269"
@@ -3973,8 +3979,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58271"
@@ -3984,8 +3990,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58273"
@@ -3995,8 +4001,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58275"
@@ -4006,8 +4012,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58277"
@@ -4017,8 +4023,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58279"
@@ -4028,8 +4034,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58297"
@@ -4039,8 +4045,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58299"
@@ -4050,8 +4056,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58305"
@@ -4061,8 +4067,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58307"
@@ -4072,8 +4078,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58309"
@@ -4083,8 +4089,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58319"
@@ -4094,8 +4100,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58321"
@@ -4105,8 +4111,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58323"
@@ -4116,8 +4122,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58325"
@@ -4127,8 +4133,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58331"
@@ -4138,8 +4144,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58333"
@@ -4149,8 +4155,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58335"
@@ -4160,8 +4166,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58337"
@@ -4171,8 +4177,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58339"
@@ -4182,8 +4188,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58349"
@@ -4193,8 +4199,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58351"
@@ -4204,8 +4210,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58353"
@@ -4215,8 +4221,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58355"
@@ -4226,8 +4232,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58363"
@@ -4237,8 +4243,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58365"
@@ -4248,8 +4254,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58367"
@@ -4259,8 +4265,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58369"
@@ -4270,8 +4276,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58393"
@@ -4281,8 +4287,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58395"
@@ -4292,8 +4298,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58397"
@@ -4303,8 +4309,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58399"
@@ -4314,8 +4320,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58405"
@@ -4325,8 +4331,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58407"
@@ -4336,8 +4342,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58409"
@@ -4347,8 +4353,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58411"
@@ -4358,8 +4364,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58413"
@@ -4369,8 +4375,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58415"
@@ -4380,8 +4386,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58427"
@@ -4391,8 +4397,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58429"
@@ -4402,8 +4408,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58431"
@@ -4413,8 +4419,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58433"
@@ -4424,8 +4430,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58435"
@@ -4435,8 +4441,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58437"
@@ -4446,8 +4452,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58439"
@@ -4457,8 +4463,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58441"
@@ -4468,8 +4474,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58443"
@@ -4479,8 +4485,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58449"
@@ -4490,8 +4496,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58451"
@@ -4501,8 +4507,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58457"
@@ -4512,8 +4518,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58459"
@@ -4523,8 +4529,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58461"
@@ -4534,8 +4540,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58463"
@@ -4545,8 +4551,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58465"
@@ -4556,8 +4562,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58467"
@@ -4567,8 +4573,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58469"
@@ -4578,8 +4584,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58471"
@@ -4589,8 +4595,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58473"
@@ -4600,8 +4606,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58475"
@@ -4611,8 +4617,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58477"
@@ -4622,8 +4628,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58483"
@@ -4633,8 +4639,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58485"
@@ -4644,8 +4650,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58495"
@@ -4655,8 +4661,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58497"
@@ -4666,8 +4672,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58499"
@@ -4677,8 +4683,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58501"
@@ -4688,8 +4694,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58505"
@@ -4699,8 +4705,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58507"
@@ -4710,8 +4716,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58509"
@@ -4721,8 +4727,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58511"
@@ -4732,8 +4738,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58517"
@@ -4743,8 +4749,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58519"
@@ -4754,8 +4760,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58525"
@@ -4765,8 +4771,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58527"
@@ -4776,8 +4782,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58529"
@@ -4787,8 +4793,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58531"
@@ -4798,8 +4804,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58533"
@@ -4809,8 +4815,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58535"
@@ -4820,8 +4826,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58537"
@@ -4831,8 +4837,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58539"
@@ -4842,8 +4848,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58541"
@@ -4853,8 +4859,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58543"
@@ -4864,8 +4870,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58545"
@@ -4875,8 +4881,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58551"
@@ -4886,8 +4892,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58553"
@@ -4897,8 +4903,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58563"
@@ -4908,8 +4914,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58573"
@@ -4919,8 +4925,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58593"
@@ -4930,8 +4936,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58601"
@@ -4941,8 +4947,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58619"
@@ -4952,8 +4958,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58621"
@@ -4963,8 +4969,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58623"
@@ -4974,8 +4980,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58625"
@@ -4985,8 +4991,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58627"
@@ -4996,8 +5002,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58629"
@@ -5007,8 +5013,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58631"
@@ -5018,8 +5024,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58633"
@@ -5029,8 +5035,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58643"
@@ -5040,8 +5046,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58645"
@@ -5051,8 +5057,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58655"
@@ -5062,8 +5068,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58657"
@@ -5073,8 +5079,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58659"
@@ -5084,8 +5090,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58669"
@@ -5095,8 +5101,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58671"
@@ -5106,8 +5112,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58673"
@@ -5117,8 +5123,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58675"
@@ -5128,8 +5134,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58681"
@@ -5139,8 +5145,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58683"
@@ -5150,8 +5156,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58685"
@@ -5161,8 +5167,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58687"
@@ -5172,8 +5178,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58689"
@@ -5183,8 +5189,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58699"
@@ -5194,8 +5200,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58701"
@@ -5205,8 +5211,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58703"
@@ -5216,8 +5222,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58705"
@@ -5227,8 +5233,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58723"
@@ -5238,8 +5244,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58725"
@@ -5249,8 +5255,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58731"
@@ -5260,8 +5266,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58733"
@@ -5271,8 +5277,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58735"
@@ -5282,8 +5288,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58737"
@@ -5293,8 +5299,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58743"
@@ -5304,8 +5310,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58751"
@@ -5315,8 +5321,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58753"
@@ -5326,8 +5332,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58755"
@@ -5337,8 +5343,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58757"
@@ -5348,8 +5354,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58759"
@@ -5359,8 +5365,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58761"
@@ -5370,8 +5376,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58763"
@@ -5381,8 +5387,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58765"
@@ -5392,8 +5398,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58771"
@@ -5403,8 +5409,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58773"
@@ -5414,8 +5420,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58777"
@@ -5425,8 +5431,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58785"
@@ -5436,8 +5442,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58787"
@@ -5447,8 +5453,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58789"
@@ -5458,8 +5464,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58791"
@@ -5469,8 +5475,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58793"
@@ -5480,8 +5486,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58795"
@@ -5491,8 +5497,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58797"
@@ -5502,8 +5508,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58799"
@@ -5513,8 +5519,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58801"
@@ -5524,8 +5530,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58807"
@@ -5535,8 +5541,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58809"
@@ -5546,8 +5552,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58811"
@@ -5557,8 +5563,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58823"
@@ -5568,8 +5574,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58825"
@@ -5579,8 +5585,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58827"
@@ -5590,8 +5596,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58831"
@@ -5601,8 +5607,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58833"
@@ -5612,8 +5618,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58835"
@@ -5623,8 +5629,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58841"
@@ -5634,8 +5640,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58847"
@@ -5645,8 +5651,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58855"
@@ -5656,8 +5662,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58857"
@@ -5667,8 +5673,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58859"
@@ -5678,8 +5684,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58861"
@@ -5689,8 +5695,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58863"
@@ -5700,8 +5706,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58865"
@@ -5711,8 +5717,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58867"
@@ -5722,8 +5728,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58869"
@@ -5733,8 +5739,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58875"
@@ -5744,8 +5750,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58877"
@@ -5755,8 +5761,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58879"
@@ -5766,8 +5772,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58885"
@@ -5777,8 +5783,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58887"
@@ -5788,8 +5794,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58893"
@@ -5799,8 +5805,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58895"
@@ -5810,8 +5816,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58897"
@@ -5821,8 +5827,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58911"
@@ -5832,8 +5838,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58913"
@@ -5843,8 +5849,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58915"
@@ -5854,8 +5860,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58933"
@@ -5865,8 +5871,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58935"
@@ -5876,8 +5882,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58937"
@@ -5887,8 +5893,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58939"
@@ -5898,8 +5904,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58941"
@@ -5909,8 +5915,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58943"
@@ -5920,8 +5926,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58945"
@@ -5931,8 +5937,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58947"
@@ -5942,8 +5948,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58949"
@@ -5953,8 +5959,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58951"
@@ -5964,8 +5970,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58973"
@@ -5975,8 +5981,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58975"
@@ -5986,8 +5992,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58977"
@@ -5997,8 +6003,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58979"
@@ -6008,8 +6014,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58997"
@@ -6019,8 +6025,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter58999"
@@ -6030,8 +6036,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59001"
@@ -6041,8 +6047,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59003"
@@ -6052,8 +6058,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59005"
@@ -6063,8 +6069,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59007"
@@ -6074,8 +6080,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59009"
@@ -6085,8 +6091,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59011"
@@ -6096,8 +6102,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59041"
@@ -6107,8 +6113,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59057"
@@ -6118,8 +6124,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59059"
@@ -6129,8 +6135,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59061"
@@ -6140,8 +6146,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59063"
@@ -6151,8 +6157,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59065"
@@ -6162,8 +6168,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59067"
@@ -6173,8 +6179,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59069"
@@ -6184,8 +6190,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59083"
@@ -6195,8 +6201,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59085"
@@ -6206,8 +6212,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59087"
@@ -6217,8 +6223,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59089"
@@ -6228,8 +6234,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59091"
@@ -6239,8 +6245,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59093"
@@ -6250,8 +6256,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59095"
@@ -6261,8 +6267,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59097"
@@ -6272,8 +6278,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59099"
@@ -6283,8 +6289,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59101"
@@ -6294,8 +6300,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59103"
@@ -6305,8 +6311,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59117"
@@ -6316,8 +6322,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59119"
@@ -6327,8 +6333,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59121"
@@ -6338,8 +6344,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59123"
@@ -6349,8 +6355,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59125"
@@ -6360,8 +6366,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59127"
@@ -6371,8 +6377,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59129"
@@ -6382,8 +6388,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59145"
@@ -6393,8 +6399,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59147"
@@ -6404,8 +6410,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59149"
@@ -6415,8 +6421,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59151"
@@ -6426,8 +6432,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59153"
@@ -6437,8 +6443,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59155"
@@ -6448,8 +6454,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59157"
@@ -6459,8 +6465,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59159"
@@ -6470,8 +6476,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59161"
@@ -6481,8 +6487,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59163"
@@ -6492,8 +6498,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59165"
@@ -6503,8 +6509,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59167"
@@ -6514,8 +6520,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59181"
@@ -6525,8 +6531,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59183"
@@ -6536,8 +6542,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59185"
@@ -6547,8 +6553,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59187"
@@ -6558,8 +6564,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59205"
@@ -6569,8 +6575,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59207"
@@ -6580,8 +6586,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59209"
@@ -6591,8 +6597,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59211"
@@ -6602,8 +6608,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59219"
@@ -6613,8 +6619,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59221"
@@ -6624,8 +6630,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59223"
@@ -6635,8 +6641,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59225"
@@ -6646,8 +6652,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59243"
@@ -6657,8 +6663,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59261"
@@ -6668,8 +6674,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59263"
@@ -6679,8 +6685,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59265"
@@ -6690,8 +6696,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59267"
@@ -6701,8 +6707,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59269"
@@ -6712,8 +6718,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59271"
@@ -6723,8 +6729,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59273"
@@ -6734,8 +6740,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59275"
@@ -6745,8 +6751,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59277"
@@ -6756,8 +6762,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59279"
@@ -6767,8 +6773,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59281"
@@ -6778,8 +6784,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59283"
@@ -6789,8 +6795,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59285"
@@ -6800,8 +6806,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59287"
@@ -6811,8 +6817,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59289"
@@ -6822,8 +6828,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59291"
@@ -6833,8 +6839,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59295"
@@ -6844,8 +6850,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59297"
@@ -6855,8 +6861,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59301"
@@ -6866,8 +6872,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59303"
@@ -6877,8 +6883,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59305"
@@ -6888,8 +6894,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59307"
@@ -6899,8 +6905,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59325"
@@ -6910,8 +6916,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59327"
@@ -6921,8 +6927,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59329"
@@ -6932,8 +6938,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59331"
@@ -6943,8 +6949,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59333"
@@ -6954,8 +6960,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59335"
@@ -6965,8 +6971,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59337"
@@ -6976,8 +6982,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59339"
@@ -6987,8 +6993,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59341"
@@ -6998,8 +7004,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59343"
@@ -7009,8 +7015,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59345"
@@ -7020,8 +7026,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59347"
@@ -7031,8 +7037,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59349"
@@ -7042,8 +7048,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59351"
@@ -7053,8 +7059,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59353"
@@ -7064,8 +7070,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59355"
@@ -7075,8 +7081,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59365"
@@ -7086,8 +7092,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59367"
@@ -7097,8 +7103,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59385"
@@ -7108,8 +7114,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59387"
@@ -7119,8 +7125,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59389"
@@ -7130,8 +7136,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59391"
@@ -7141,8 +7147,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59393"
@@ -7152,8 +7158,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59395"
@@ -7163,8 +7169,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59397"
@@ -7174,8 +7180,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59399"
@@ -7185,8 +7191,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59401"
@@ -7196,8 +7202,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59403"
@@ -7207,8 +7213,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59405"
@@ -7218,8 +7224,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59407"
@@ -7229,8 +7235,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59409"
@@ -7240,8 +7246,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59411"
@@ -7251,8 +7257,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59413"
@@ -7262,8 +7268,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59415"
@@ -7273,8 +7279,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59417"
@@ -7284,8 +7290,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59419"
@@ -7295,8 +7301,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59421"
@@ -7306,8 +7312,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59431"
@@ -7317,8 +7323,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59433"
@@ -7328,8 +7334,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59439"
@@ -7339,8 +7345,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59441"
@@ -7350,8 +7356,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59443"
@@ -7361,8 +7367,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59445"
@@ -7372,8 +7378,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59447"
@@ -7383,8 +7389,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59449"
@@ -7394,8 +7400,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59451"
@@ -7405,8 +7411,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59453"
@@ -7416,8 +7422,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59455"
@@ -7427,8 +7433,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59457"
@@ -7438,8 +7444,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59459"
@@ -7449,8 +7455,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59461"
@@ -7460,8 +7466,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59463"
@@ -7471,8 +7477,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59465"
@@ -7482,8 +7488,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59467"
@@ -7493,8 +7499,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59469"
@@ -7504,8 +7510,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59471"
@@ -7515,8 +7521,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59479"
@@ -7526,8 +7532,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59481"
@@ -7537,8 +7543,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59483"
@@ -7548,8 +7554,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59485"
@@ -7559,8 +7565,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59487"
@@ -7570,8 +7576,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59491"
@@ -7581,8 +7587,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59505"
@@ -7592,8 +7598,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59507"
@@ -7603,8 +7609,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59513"
@@ -7614,8 +7620,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59515"
@@ -7625,8 +7631,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59517"
@@ -7636,8 +7642,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59519"
@@ -7647,8 +7653,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59521"
@@ -7658,8 +7664,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59523"
@@ -7669,8 +7675,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59525"
@@ -7680,8 +7686,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59527"
@@ -7691,8 +7697,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59529"
@@ -7702,8 +7708,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59531"
@@ -7713,8 +7719,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59535"
@@ -7724,8 +7730,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59537"
@@ -7735,8 +7741,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59539"
@@ -7746,8 +7752,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59541"
@@ -7757,8 +7763,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59547"
@@ -7768,8 +7774,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59549"
@@ -7779,8 +7785,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59557"
@@ -7790,8 +7796,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59559"
@@ -7801,8 +7807,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59561"
@@ -7812,8 +7818,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59563"
@@ -7823,8 +7829,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59565"
@@ -7834,8 +7840,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59567"
@@ -7845,8 +7851,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59585"
@@ -7856,8 +7862,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59587"
@@ -7867,8 +7873,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59589"
@@ -7878,8 +7884,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59591"
@@ -7889,8 +7895,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59593"
@@ -7900,8 +7906,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59599"
@@ -7911,8 +7917,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59601"
@@ -7922,8 +7928,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59603"
@@ -7933,8 +7939,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59605"
@@ -7944,8 +7950,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59607"
@@ -7955,8 +7961,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59609"
@@ -7966,8 +7972,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59611"
@@ -7977,8 +7983,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59613"
@@ -7988,8 +7994,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59615"
@@ -7999,8 +8005,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59617"
@@ -8010,8 +8016,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59635"
@@ -8021,8 +8027,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59637"
@@ -8032,8 +8038,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59639"
@@ -8043,8 +8049,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59649"
@@ -8054,8 +8060,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59651"
@@ -8065,8 +8071,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59653"
@@ -8076,8 +8082,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59655"
@@ -8087,8 +8093,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59657"
@@ -8098,8 +8104,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59659"
@@ -8109,8 +8115,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59661"
@@ -8120,8 +8126,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59663"
@@ -8131,8 +8137,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59665"
@@ -8142,8 +8148,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59667"
@@ -8153,8 +8159,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59669"
@@ -8164,8 +8170,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59671"
@@ -8175,8 +8181,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59681"
@@ -8186,8 +8192,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59683"
@@ -8197,8 +8203,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59685"
@@ -8208,8 +8214,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59687"
@@ -8219,8 +8225,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59689"
@@ -8230,8 +8236,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59691"
@@ -8241,8 +8247,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59693"
@@ -8252,8 +8258,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59701"
@@ -8263,8 +8269,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59703"
@@ -8274,8 +8280,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59705"
@@ -8285,8 +8291,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59707"
@@ -8296,8 +8302,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59709"
@@ -8307,8 +8313,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59723"
@@ -8318,8 +8324,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59725"
@@ -8329,8 +8335,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59727"
@@ -8340,8 +8346,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59729"
@@ -8351,8 +8357,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59731"
@@ -8362,8 +8368,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59733"
@@ -8373,8 +8379,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59735"
@@ -8384,8 +8390,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59737"
@@ -8395,8 +8401,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59739"
@@ -8406,8 +8412,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59749"
@@ -8417,8 +8423,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59751"
@@ -8428,8 +8434,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59753"
@@ -8439,8 +8445,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59755"
@@ -8450,8 +8456,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59757"
@@ -8461,8 +8467,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59759"
@@ -8472,8 +8478,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59761"
@@ -8483,8 +8489,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59769"
@@ -8494,8 +8500,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59771"
@@ -8505,8 +8511,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59773"
@@ -8516,8 +8522,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59775"
@@ -8527,8 +8533,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59777"
@@ -8538,8 +8544,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59789"
@@ -8549,8 +8555,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59791"
@@ -8560,8 +8566,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59793"
@@ -8571,8 +8577,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59795"
@@ -8582,8 +8588,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59797"
@@ -8593,8 +8599,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59799"
@@ -8604,8 +8610,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59801"
@@ -8615,8 +8621,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59817"
@@ -8626,8 +8632,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59819"
@@ -8637,8 +8643,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59821"
@@ -8648,8 +8654,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59823"
@@ -8659,8 +8665,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59825"
@@ -8670,8 +8676,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59827"
@@ -8681,8 +8687,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59829"
@@ -8692,8 +8698,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59837"
@@ -8703,8 +8709,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59839"
@@ -8714,8 +8720,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59841"
@@ -8725,8 +8731,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59843"
@@ -8736,8 +8742,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59845"
@@ -8747,8 +8753,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59847"
@@ -8758,8 +8764,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59849"
@@ -8769,8 +8775,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59851"
@@ -8780,8 +8786,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59861"
@@ -8791,8 +8797,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59863"
@@ -8802,8 +8808,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59865"
@@ -8813,8 +8819,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59867"
@@ -8824,8 +8830,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61470"
@@ -8835,11 +8841,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8850,9 +8856,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61598"
@@ -8862,11 +8868,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8877,9 +8883,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61678"
@@ -8889,11 +8895,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8904,9 +8910,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61696"
@@ -8916,11 +8922,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8931,9 +8937,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61728"
@@ -8943,11 +8949,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8958,9 +8964,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61844"
@@ -8970,11 +8976,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -8985,9 +8991,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61848"
@@ -8997,11 +9003,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9012,9 +9018,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61852"
@@ -9024,11 +9030,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9039,9 +9045,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61854"
@@ -9051,11 +9057,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9066,9 +9072,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61866"
@@ -9078,11 +9084,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9093,9 +9099,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61868"
@@ -9105,11 +9111,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9120,9 +9126,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61872"
@@ -9132,11 +9138,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9147,9 +9153,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61874"
@@ -9159,11 +9165,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9174,9 +9180,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61876"
@@ -9186,11 +9192,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9201,9 +9207,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61878"
@@ -9213,11 +9219,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9228,9 +9234,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61880"
@@ -9240,11 +9246,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9255,9 +9261,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61882"
@@ -9267,11 +9273,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9282,9 +9288,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61884"
@@ -9294,11 +9300,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9309,9 +9315,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61886"
@@ -9321,11 +9327,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9336,9 +9342,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61888"
@@ -9348,11 +9354,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9363,9 +9369,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61890"
@@ -9375,11 +9381,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9390,9 +9396,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61892"
@@ -9402,11 +9408,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9417,9 +9423,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61894"
@@ -9429,11 +9435,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9444,9 +9450,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61896"
@@ -9456,11 +9462,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9471,9 +9477,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61898"
@@ -9483,11 +9489,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9498,9 +9504,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61900"
@@ -9510,11 +9516,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9525,9 +9531,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61902"
@@ -9537,11 +9543,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9552,9 +9558,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61904"
@@ -9564,11 +9570,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9579,9 +9585,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61908"
@@ -9591,11 +9597,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9606,9 +9612,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61910"
@@ -9618,11 +9624,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9633,9 +9639,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61912"
@@ -9645,11 +9651,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9660,9 +9666,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61914"
@@ -9672,11 +9678,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9687,9 +9693,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61922"
@@ -9699,11 +9705,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9714,9 +9720,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61926"
@@ -9726,11 +9732,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9741,9 +9747,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61928"
@@ -9753,11 +9759,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9768,9 +9774,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61930"
@@ -9780,11 +9786,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9795,9 +9801,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61932"
@@ -9807,11 +9813,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9822,9 +9828,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61934"
@@ -9834,11 +9840,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9849,9 +9855,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61940"
@@ -9861,11 +9867,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9876,9 +9882,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61942"
@@ -9888,11 +9894,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9903,9 +9909,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61944"
@@ -9915,11 +9921,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9930,9 +9936,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61946"
@@ -9942,11 +9948,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9957,9 +9963,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61950"
@@ -9969,11 +9975,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -9984,9 +9990,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61952"
@@ -9996,11 +10002,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10011,9 +10017,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61954"
@@ -10023,11 +10029,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10038,9 +10044,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61998"
@@ -10050,11 +10056,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10065,9 +10071,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62000"
@@ -10077,11 +10083,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10092,9 +10098,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62006"
@@ -10104,11 +10110,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10119,9 +10125,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62030"
@@ -10131,11 +10137,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10146,9 +10152,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62032"
@@ -10158,11 +10164,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10173,9 +10179,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62040"
@@ -10185,11 +10191,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10200,9 +10206,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62042"
@@ -10212,11 +10218,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10227,9 +10233,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61868-5"
@@ -10239,11 +10245,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10254,9 +10260,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61868-5-0"
@@ -10266,11 +10272,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10281,9 +10287,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61868-5-0-3"
@@ -10293,11 +10299,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10308,9 +10314,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61852-1"
@@ -10320,11 +10326,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10335,9 +10341,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61854-6"
@@ -10347,11 +10353,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10362,9 +10368,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61874-2"
@@ -10374,11 +10380,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10389,9 +10395,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61876-8"
@@ -10401,11 +10407,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10416,9 +10422,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61878-3"
@@ -10428,11 +10434,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10443,9 +10449,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61898-2"
@@ -10455,11 +10461,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10470,9 +10476,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61900-0"
@@ -10482,11 +10488,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10497,9 +10503,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61902-5"
@@ -10509,11 +10515,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10524,9 +10530,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61908-6"
@@ -10536,11 +10542,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10551,9 +10557,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61930-0"
@@ -10563,11 +10569,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10578,9 +10584,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61934-8"
@@ -10590,11 +10596,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10605,9 +10611,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62000-1"
@@ -10617,11 +10623,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10632,9 +10638,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61844-8"
@@ -10644,11 +10650,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10659,9 +10665,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61866-2"
@@ -10671,11 +10677,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10686,9 +10692,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61892-3"
@@ -10698,11 +10704,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10713,9 +10719,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61894-3"
@@ -10725,11 +10731,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10740,9 +10746,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61910-4"
@@ -10752,11 +10758,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10767,9 +10773,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61912-4"
@@ -10779,11 +10785,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10794,9 +10800,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61922-4"
@@ -10806,11 +10812,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10821,9 +10827,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61940-7"
@@ -10833,11 +10839,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10848,9 +10854,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61942-6"
@@ -10860,11 +10866,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10875,9 +10881,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59539-9"
@@ -10887,8 +10893,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59491-1"
@@ -10898,8 +10904,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter59491-1-9"
@@ -10909,8 +10915,8 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={149} />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color1" type="hueRotate" values="149" />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61696-0"
@@ -10920,11 +10926,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10935,9 +10941,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61872-7"
@@ -10947,11 +10953,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10962,9 +10968,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61882-2"
@@ -10974,11 +10980,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -10989,9 +10995,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61886-9"
@@ -11001,11 +11007,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11016,9 +11022,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61890-9"
@@ -11028,11 +11034,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11043,9 +11049,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61896-8"
@@ -11055,11 +11061,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11070,9 +11076,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61904-3"
@@ -11082,11 +11088,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11097,9 +11103,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61926-7"
@@ -11109,11 +11115,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11124,9 +11130,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61928-4"
@@ -11136,11 +11142,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11151,9 +11157,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61946-6"
@@ -11163,11 +11169,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11178,9 +11184,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61952-2"
@@ -11190,11 +11196,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11205,9 +11211,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61954-6"
@@ -11217,11 +11223,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11232,9 +11238,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61998-2"
@@ -11244,11 +11250,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11259,9 +11265,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62030-8"
@@ -11271,11 +11277,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11286,9 +11292,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62032-3"
@@ -11298,11 +11304,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11313,9 +11319,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62042-4"
@@ -11325,11 +11331,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11340,9 +11346,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61470-5"
@@ -11352,11 +11358,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11367,9 +11373,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61598-6"
@@ -11379,11 +11385,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11394,9 +11400,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61678-4"
@@ -11406,11 +11412,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11421,9 +11427,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61728-5"
@@ -11433,11 +11439,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11448,9 +11454,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61880-0"
@@ -11460,11 +11466,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11475,9 +11481,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61884-9"
@@ -11487,11 +11493,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11502,9 +11508,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61888-6"
@@ -11514,11 +11520,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11529,9 +11535,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61932-8"
@@ -11541,11 +11547,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11556,9 +11562,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61944-2"
@@ -11568,11 +11574,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11583,9 +11589,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter61950-5"
@@ -11595,11 +11601,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11610,9 +11616,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62006-5"
@@ -11622,11 +11628,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11637,9 +11643,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
       <filter
         id="filter62040-0"
@@ -11649,11 +11655,11 @@ const Histogram = (props) => (
         height={1.0455}
         colorInterpolationFilters="sRGB"
       >
-        <feColorMatrix result="color1" type="hueRotate" values={0} />
+        <feColorMatrix result="color1" type="hueRotate" values="0" />
         <feColorMatrix
           result="fbSourceGraphic"
           type="saturate"
-          values={0.978723}
+          values="0.978723"
         />
         <feColorMatrix
           in="fbSourceGraphic"
@@ -11664,9 +11670,9 @@ const Histogram = (props) => (
           in="fbSourceGraphic"
           result="color1"
           type="hueRotate"
-          values={0}
+          values="0"
         />
-        <feColorMatrix result="color2" type="saturate" values={0.978723} />
+        <feColorMatrix result="color2" type="saturate" values="0.978723" />
       </filter>
     </defs>
     <g transform="matrix(1.024 0 0 1.028 41.178 -151.6)">
@@ -44970,7 +44976,7 @@ const Histogram = (props) => (
         fillOpacity={0.3621}
         strokeWidth={0}
         style={{ paintOrder: "stroke fill markers" }}
-        aria-label={0}
+        aria-label="0"
       />
       <text
         x={14.21505}
