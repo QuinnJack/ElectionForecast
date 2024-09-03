@@ -4,7 +4,8 @@ import { Slider } from "@nextui-org/react";
 import DynamicSeatChart from "./DynamicSeatChart";
 import Example from "./Pie";
 import IconTabs from "./IconTabs";
-
+import "katex/dist/katex.min.css";
+import { BlockMath, InlineMath } from "react-katex";
 const parties = [
   {
     id: "CON",
@@ -257,6 +258,16 @@ const Simulation = () => {
                       style={{
                         borderColor: party.color,
                         backgroundColor: `${party.color}59`,
+                        cursor: "grab",
+                      }}
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        e.currentTarget.style.cursor = "grab"; // Prevent finger clenching
+                        e.currentTarget.style.transform = "none"; // Prevent shrinking effect
+                      }}
+                      onMouseUp={(e) => {
+                        e.currentTarget.style.cursor = "grab"; // Ensure cursor stays as grab
+                        e.currentTarget.style.transform = "none"; // Ensure no transformation after mouse up
                       }}
                     ></div>
                     <span className="font-mono text-sm font-semibold w-4 text-center">
@@ -273,7 +284,7 @@ const Simulation = () => {
                           {...props}
                           className={`group p-2 top-1/2 ${getThumbColor(
                             party.name
-                          )} bg-opacity-35 border shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing`}
+                          )} bg-opacity-35 border shadow-medium rounded-full cursor-grab data-[dragging=true]:cursor-grabbing select-none`}
                         />
                       )}
                       aria-label={party.name}
@@ -292,6 +303,7 @@ const Simulation = () => {
                 </div>
               </div>
             ))}
+
             <div className="mt-6">
               <div className="flex items-center justify-between mb-1">
                 <p className="font-editorial-light text-xl font-light">
@@ -331,18 +343,117 @@ const Simulation = () => {
       </div>
       <div className="font-sans px-12 py-2 relative max-w-4xl mx-auto">
         <div className="mb-8">
-          <h2 className="text-4xl text-left font-editorial-light text-gray-800">
-            Data Collection
-          </h2>
+          <p className="text-left font-degular text-lg text-gray-600">
+            You might notice that the popular vote is not completly proportional
+            to the seat count. This is because Canada, like many countries with
+            roots in the British parliamentary system, employs a
+            first-past-the-post (FPTP) voting system for its federal and most
+            provincial elections. This "winner-takes-all" system, while
+            straightforward in its implementation, has far-reaching implications
+            for political representation, party strategies, and voter behavior.
+          </p>
           <br />
           <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
-            arcu, a volutpat nisi erat non libero.
+            In an FPTP system, the candidate who receives the most votes in a
+            given constituency wins that seat, regardless of whether they
+            achieve a majority. Mathematically, we can express this as:
+          </p>
+          <BlockMath
+            className=" text-gray-600"
+            style={{ color: "#2d3748" }}
+            math="\color{#5b6573} C = \{c_1, c_2, ..., c_n\}"
+          />
+          <BlockMath math="\color{#5b6573}V = \{v_1, v_2, ..., v_m\}" />
+          <p className="text-left font-degular text-lg text-gray-600">
+            Let <InlineMath math="\color{#5b6573} \small  f: V \rightarrow C" />{" "}
+            be the function mapping voters to their chosen candidates.
+          </p>
+          <p className="text-left font-degular text-lg text-gray-600">
+            The winner <InlineMath math="\color{#5b6573} \small  w" /> is
+            determined by:
+          </p>
+          <BlockMath math="\color{#5b6573}w = \argmax_{c \in C} |\{v \in V : f(v) = c\}| " />
+
+          <p className="text-left font-degular text-lg text-gray-600">
+            The probabilistic nature of FPTP becomes apparent when we consider
+            the distribution of votes across multiple constituencies. Let's
+            consider a simplified model with three parties: A, B, and C.
+          </p>
+          <p className="text-left font-degular text-lg text-gray-600">
+            Assumeing the national support for these parties is Party A: 40%,
+            Party B: 35% and Party C: 25%
+          </p>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            In a perfectly proportional system, these percentages would
+            translate directly to seat allocations. However, FPTP introduces
+            significant variance. To model this, we can use a multinomial
+            distribution for each constituency:
+          </p>
+          <BlockMath math="\color{#5b6573}P(X_A = k_A, X_B = k_B, X_C = k_C) = \frac{n!}{k_A!k_B!k_C!} p_A^{k_A} p_B^{k_B} p_C^{k_C}" />
+          <p className="text-left font-degular text-lg text-gray-600">
+            Where <InlineMath math="\color{#5b6573} \small  X_i" /> is the
+            number of votes for party{" "}
+            <InlineMath math="\color{#5b6573} \small  i" />,{" "}
+            <InlineMath math="\color{#5b6573} \small  k_i" /> is a specific
+            outcome, <InlineMath math="\color{#5b6573} \small  n" /> is the
+            total number of voters, and{" "}
+            <InlineMath math="\color{#5b6573} \small  p_i" /> is the probability
+            of voting for party <InlineMath math="\color{#5b6573} \small  i" />.
+          </p>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            This model reveals that even with consistent national support, local
+            results can vary significantly, leading to disproportionate seat
+            allocations.
+          </p>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            The FPTP system often encourages strategic voting, where voters cast
+            ballots not for their preferred candidate, but for the candidate
+            most likely to defeat their least preferred option. This phenomenon
+            can be modeled using game theory, specifically as a form of
+            Duverger's law.
+          </p>
+          <p className="text-left font-degular text-lg text-gray-600">
+            Let <InlineMath math="\color{#5b6573} \small  U_i(j)" /> represent
+            voter <InlineMath math="\color{#5b6573} \small  i" />
+            's utility for candidate{" "}
+            <InlineMath math="\color{#5b6573} \small  j" /> winning. A strategic
+            voter might choose to vote for candidate{" "}
+            <InlineMath math="\color{#5b6573} \small  k" /> instead of their
+            preferred candidate <InlineMath math="\color{#5b6573} \small  j" />{" "}
+            if:
+          </p>
+          <BlockMath math="\color{#5b6573}P(k \text{ wins} | i \text{ votes for } k) \cdot U_i(k) > P(j \text{ wins} | i \text{ votes for } j) \cdot U_i(j)" />
+          <p className="text-left font-degular text-lg text-gray-600">
+            Where{" "}
+            <InlineMath math="\color{#5b6573} \small   \small P(x \text{ wins} | i \text{ votes for } y)" />{" "}
+            represents the probability of{" "}
+            <InlineMath math="\color{#5b6573} \small  x" /> winning given{" "}
+            <InlineMath math="\color{#5b6573} \small  i" />
+            's vote for <InlineMath math="\color{#5b6573} \small  y" />.
+          </p>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            In the 2021 federal election, this system resulted in the Liberal
+            Party of Canada winning 160 seats to form a minority government,
+            despite receiving fewer votes than the Conservative Party of Canada,
+            which won 119 seats.
+          </p>
+          <br />
+          <p className="text-left font-degular text-lg text-gray-600">
+            Below you can explore election results over the years and see how
+            FPTP has impacted the outcomes. Clicking on a party will display
+            their results in that election, including whether they over or
+            underperformed compared to their expected proportional of seats.
+            You'll notice that the Bloc Québécois constantly overform, while the
+            the Green Party are perennial underperformers. Why do you think that
+            is?
           </p>
         </div>
       </div>
+
       <IconTabs
         center={true}
         selectedTab={selectedTab}
