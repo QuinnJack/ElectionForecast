@@ -654,57 +654,6 @@ function Methodology() {
               onProvinceHover={handleProvinceHover}
             />
           </div>
-          <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
-            arcu, a volutpat nisi erat non libero.
-          </p>
-          <br />
-          <h3 className="text-4xl text-left font-editorial-light text-gray-800">
-            Polling Sources
-          </h3>
-          <br />
-          <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur,t sagittis, dolor justo ullamcorper arcu, a volutpat
-            nisi erat non libero.
-          </p>
-          <br />
-          <h3 className="text-4xl text-left font-editorial-light text-gray-800">
-            Simulation Techniques
-          </h3>
-          <br />
-          <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
-            arcu, a volutpat nisi erat non libero.
-          </p>
-          <br />
-          <h3 className="text-4xl text-left font-editorial-light text-gray-800">
-            Historical Accuracy
-          </h3>
-          <br />
-          <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
-            arcu, a volutpat nisi erat non libero.
-          </p>
-          <br />
-          <h3 className="text-4xl text-left font-editorial-light text-gray-800">
-            Robustness Checks
-          </h3>
-          <br />
-          <p className="text-left font-degular text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vel urna nec nulla ultricies posuere. Sed sit amet erat libero.
-            Donec efficitur, lorem nec laoreet sagittis, dolor justo ullamcorper
-            arcu, a volutpat nisi erat non libero.
-          </p>
-          <br />
         </div>
       </div>
     </div>
