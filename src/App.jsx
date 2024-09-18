@@ -7,14 +7,14 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/forecast" element={<Forecast />} />
         <Route path="/methodology" element={<Methodology />} />
         <Route path="/simulator" element={<Simulator />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
